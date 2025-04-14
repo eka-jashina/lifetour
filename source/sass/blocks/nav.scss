@@ -1,0 +1,158 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 14px;
+}
+
+.nav__burger {
+  @include button-reset;
+
+  width: 26px;
+  height: 26px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/__spritemap#sprite-menu-open-view");
+
+  transition: background-image 0.3s ease-in-out, opacity 0.3s ease-in-out, outline 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    outline: none;
+    outline: 1px solid inherit;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.nav__burger.nav__burger--active {
+  background-image: url("/__spritemap#sprite-menu-close-view");
+}
+
+.nav__list {
+  @include list-reset;
+
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.nav__list.nav__list--shown {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+  padding: 30px 15px 50px 15px;
+  width: 100vw;
+
+  background-color: $background-dark-color;
+
+  @media (min-width: $tablet) {
+    top: 82px;
+
+    row-gap: 26px;
+
+    padding: 50px 45px 70px 45px;
+  }
+}
+
+.nav__link {
+  @include link-reset;
+  @include nav-font;
+
+  padding: 3px 5px;
+
+  &:focus-visible {
+    outline: none;
+    outline: 1px solid inherit;
+  }
+}
+
+.nav__list--shown .nav__link {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4%;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.nav__tel {
+  @include link-reset;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  text-align: right;
+
+  transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+  &:active {
+    color: #1C3374;
+  }
+
+  &:not([href]) {
+    color: $disabled-color;
+    pointer-events: none;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  &--header {
+    width: 100%;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:focus-visible {
+      color: #2D383F;
+      outline: none;
+    }
+
+    @media (min-width: $tablet) {
+      width: auto;
+    }
+  }
+
+  &--footer {
+    display: none;
+
+    &:hover {
+      color: rgba(2, 102, 193, 0.1);
+    }
+
+    &:focus-visible {
+      color: #0266C1;
+      outline: none;
+    }
+
+    @media (min-width: $desktop) {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.header {
+  position: relative;
+  z-index: 2;
+
+  padding: 15px 0;
+
+  color: $text-light-color;
+
+  background-color: $background-dark-color;
+
+  @media (min-width: $tablet) {
+    padding: 20px 0;
+  }
+}

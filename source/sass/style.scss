@@ -1,0 +1,14 @@
+// VENDOR
+@import "vendor/normalize";
+
+// COMMON
+@import "common/fonts.scss";
+@import "common/variables.scss";
+@import "common/mixins.scss";
+@import "common/global.scss";
+
+//BLOCKS
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/hero.scss";
+@import "blocks/hero-slide.scss";
