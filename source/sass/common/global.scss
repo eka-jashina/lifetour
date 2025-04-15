@@ -34,6 +34,7 @@ img {
       content: "";
       position: absolute;
       inset: 0;
+      z-index: 2;
 
       background-color: rgba(45, 56, 63, 0.6);
     }

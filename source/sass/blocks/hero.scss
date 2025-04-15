@@ -1,3 +1,57 @@
-.hero__swiper-wrapper {
-  @include list-reset;
+.hero__swiper {
+  position: relative;
+
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero__navigation {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  bottom: 40px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: auto;
+  margin: 0 auto;
+
+  @media (min-width: $desktop) {
+    bottom: 80px;
+
+    justify-content: flex-end;
+    width: 1200px;
+    height: 44px;
+  }
+}
+
+.hero__bullet {
+  @include button-reset;
+
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+
+  &--active {
+    background-color: #ffffff;
+  }
+
+  &:hover {
+    background-color: #D9D9D9;
+  }
+
+  &:focus-visible {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  @media (min-width: $tablet) {
+    width: 20px;
+    height: 20px;
+  }
 }
