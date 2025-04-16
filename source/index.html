@@ -47,10 +47,12 @@
         <div class="hero__swiper-wrapper swiper-wrapper">
           <div class="hero__slide hero-slide swiper-slide">
             <div class="hero-slide__content">
-              <h2>Захватывающие вершины Кавказа</h2>
-              <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы
-                Чегет.</p>
-              <button class="hero-slide__button">Смотреть тур</button>
+              <div class="hero-slide__main">
+                <h2>Захватывающие вершины Кавказа</h2>
+                <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы
+                  Чегет.</p>
+                <button class="hero-slide__button">Смотреть тур</button>
+              </div>
               <div class="hero-slide__details">
                 <span class="hero-slide__duration">6 дней/5 ночей</span>
                 <span class="hero-slide__level">Высокая сложность</span>
@@ -73,10 +75,12 @@
           </div>
           <div class="hero__slide hero-slide swiper-slide">
             <div class="hero-slide__content">
-              <h2>Невероятная природа Камчатки</h2>
-              <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
-                уголков дикой природы в мире.</p>
-              <button class="hero-slide__button">Смотреть тур</button>
+              <div class="hero-slide__main">
+                <h2>Невероятная природа Камчатки</h2>
+                <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
+                  уголков дикой природы в мире.</p>
+                <button class="hero-slide__button">Смотреть тур</button>
+              </div>
               <div class="hero-slide__details">
                 <span class="hero-slide__duration">9 дней/10 ночей</span>
                 <span class="hero-slide__level">Средняя сложность</span>
@@ -99,10 +103,12 @@
           </div>
           <div class="hero__slide hero-slide swiper-slide">
             <div class="hero-slide__content">
-              <h2>Магические пейзажи Алтайского Края</h2>
-              <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих
-                дух ландшафтов Алтайских гор.</p>
-              <button class="hero-slide__button">Смотреть тур</button>
+              <div class="hero-slide__main">
+                <h2>Магические пейзажи Алтайского Края</h2>
+                <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих
+                  дух ландшафтов Алтайских гор.</p>
+                <button class="hero-slide__button">Смотреть тур</button>
+              </div>
               <div class="hero-slide__details">
                 <span class="hero-slide__duration">8 дней/7 ночей</span>
                 <span class="hero-slide__level">Лёгкая сложность</span>
@@ -158,7 +164,11 @@
                 </div>
               </dl>
             </div>
-            <img class="tour__img" src="#" alt="">
+          <picture>
+            <source width="380" height="416" type="image/webp"
+              srcset="img/content/tours/tours-elbrus@1x.webp 1x, img/content/tours/tours-elbrus@2x.webp 2x">
+            <img class="tour__img" src="img/content/tours/tours-elbrus@1x.jpg" srcset="img/content/tours/tours-elbrus@2x.jpg" width="380" height="416" alt="">
+          </picture>          
           </li>
           <li class="tours__item tour">
             <div class="tour__content">
@@ -187,7 +197,11 @@
                 </div>
               </dl>
             </div>
-            <img class="tour__img" src="#" alt="">
+            <picture>
+              <source width="380" height="416" type="image/webp"
+                srcset="img/content/tours/tours-beluha@1x.webp 1x, img/content/tours/tours-beluha@2x.webp 2x">
+              <img class="tour__img" src="img/content/tours/tours-beluha@1x.jpg" srcset="img/content/tours/tours-beluha@2x.jpg" width="380" height="416" alt="">
+            </picture>  
           </li>
           <li class="tours__item tour">
             <div class="tour__content">
@@ -216,7 +230,11 @@
                 </div>
               </dl>
             </div>
-            <img class="tour__img" src="#" alt="">
+            <picture>
+              <source width="380" height="416" type="image/webp"
+                srcset="img/content/tours/tours-fisht@1x.webp 1x, img/content/tours/tours-fisht@2x.webp 2x">
+              <img class="tour__img" src="img/content/tours/tours-fisht@1x.jpg" srcset="img/content/tours/tours-fisht@2x.jpg" width="380" height="416" alt="">
+            </picture>  
           </li>
           <li class="tours__item tour">
             <div class="tour__content">
@@ -245,7 +263,11 @@
                 </div>
               </dl>
             </div>
-            <img class="tour__img" src="#" alt="">
+            <picture>
+              <source width="380" height="416" type="image/webp"
+                srcset="img/content/tours/tours-manarag@1x.webp 1x, img/content/tours/tours-manarag@2x.webp 2x">
+              <img class="tour__img" src="img/content/tours/tours-manarag@1x.jpg" srcset="img/content/tours/tours-manarag@2x.jpg" width="380" height="416" alt="">
+            </picture>  
           </li>
         </ul>
         <div class="tours__navigation navigation">

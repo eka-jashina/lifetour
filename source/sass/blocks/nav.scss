@@ -23,8 +23,7 @@
   }
 
   &:focus-visible {
-    outline: none;
-    outline: 1px solid inherit;
+    outline: 1px solid currentColor;
   }
 
   @media (min-width: $desktop) {
@@ -44,6 +43,8 @@
   @media (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+    max-width: 830px;
   }
 }
 
@@ -76,8 +77,19 @@
 
   padding: 3px 5px;
 
+  transition: box-shadow 0.3s ease-in-out, outline 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 1px 0 0 currentColor;
+  }
+
   &:focus-visible {
-    outline: 1px solid #ffffff;
+    outline: 1px solid currentColor;
+  }
+
+  &:active {
+    color: #1C3374;
+    box-shadow: none;
   }
 }
 

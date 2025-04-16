@@ -1,7 +1,24 @@
 .hero-slide {
   position: relative;
+  box-sizing: border-box;
 
   color: $text-light-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%);
+  }
+
+  @media (min-width: $tablet) {
+    height: 1034px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 800px;
+  }
 }
 
 .hero-slide__img {
@@ -24,27 +41,39 @@
 }
 
 .hero-slide__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
+  position: relative;
+  z-index: 1;
+  
+  display: grid;
+  grid-template-rows: 1fr auto;
   margin: 0 auto;
   padding: 40px 15px;
   width: 320px;
-  min-height: 472px;
+  height: 568px;
+  overflow-y: scroll;
 
   @media (min-width: $tablet) {
     width: 768px;
-    min-height: 974px;
+    height: 1034px;
     padding: 40px 45px;
   }
 
   @media (min-width: $desktop) {
-    align-items: flex-start;
     width: 1440px;
-    min-height: 640px;
+    height: 800px;
     padding: 80px 120px;
+  }
+}
+
+.hero-slide__main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $desktop) {
+    align-items: flex-start;
   }
 }
 
@@ -87,6 +116,50 @@
 
 .hero-slide__details {
   display: none;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 10px;
+  }
+}
+
+.hero-slide__duration,
+.hero-slide__level {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  padding: 14px 20px 14px 40px;
+  min-width: 155px;
+  min-height: 44px;
+
+  font-size: 12px;
+  line-height: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+
+    width: 12px;
+    height: 12px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero-slide__duration::before {
+  background-image: url("/__spritemap#sprite-nights-view")
+}
+
+.hero-slide__level::before {
+  background-image: url("/__spritemap#sprite-level-view")
 }
 
 .hero-slide__button {

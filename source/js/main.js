@@ -45,5 +45,4 @@ const heroSwiper = new Swiper('.hero__swiper', {
       });
     },
   },
-
 });

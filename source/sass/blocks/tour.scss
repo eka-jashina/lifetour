@@ -1,0 +1,42 @@
+.tour {
+  position: relative;
+
+  display: flex;
+  width: 290px;
+  height: 416px;
+
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.tour__img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  height: 416px;
+  object-fit: cover;
+}
+
+.tour__content {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.tour__route {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tour__details {
+  @include list-reset;
+  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tour__description {
+  margin: 0;
+}
