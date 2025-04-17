@@ -18,7 +18,7 @@ menuLinks.forEach((link) => {
 });
 
 import Swiper from 'swiper';
-import {Pagination} from 'swiper/modules';
+import {Pagination, Navigation} from 'swiper/modules';
 import 'swiper/css';
 
 const heroSwiper = new Swiper('.hero__swiper', {
@@ -26,6 +26,7 @@ const heroSwiper = new Swiper('.hero__swiper', {
   slidesPerView: 1,
   loop: true,
   speed: 900,
+  autoHeight: true,
   pagination: {
     el: '.hero__navigation',
     type: 'bullets',
@@ -46,3 +47,34 @@ const heroSwiper = new Swiper('.hero__swiper', {
     },
   },
 });
+
+const toursSwiper = new Swiper('.tours__swiper', {
+  modules: [Navigation],
+  speed: 1000,
+  mousewheel: false,
+  simulateTouch: false,
+  autoHeight: true,
+  slidesPerView: 1,
+
+  navigation: {
+    nextEl: '.tours__button--next',
+    prevEl: '.tours__button--prev',
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 18,
+    },
+    1366: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+});
+

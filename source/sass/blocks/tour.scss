@@ -1,9 +1,10 @@
 .tour {
   position: relative;
+  box-sizing: border-box;
 
   display: flex;
   width: 290px;
-  height: 416px;
+  min-height: 416px;
 
   overflow: hidden;
 }
@@ -14,16 +15,17 @@
   left: 0;
   z-index: -1;
 
-  height: 416px;
+  height: 100%;
   object-fit: cover;
 }
 
 .tour__content {
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
+  justify-content: flex-end;
   row-gap: 15px;
   padding: 30px 20px;
+  min-height: 416px;
 
   font-size: 12px;
   line-height: 12px;
@@ -35,7 +37,7 @@
 
 .tour__title {
   position: relative;
-  
+
   margin: 0;
   padding-bottom: 15px;
 
@@ -67,7 +69,7 @@
 
 .tour__location {
   position: relative;
-  
+
   display: flex;
   align-items: center;
   padding: 8px 12px 8px 34px;
@@ -134,7 +136,7 @@
 
 .tour__details {
   @include list-reset;
-  
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -157,7 +159,7 @@
 
 .tour__description--level {
   width: 84px;
-  
+
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;

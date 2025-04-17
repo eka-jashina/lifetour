@@ -1,0 +1,11 @@
+.tours__swiper {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  margin-bottom: 25px;
+}
+
+.tours__list {
+  @include list-reset;
+}
