@@ -1,0 +1,9 @@
+.instructors__swiper {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.instructors__list {
+  @include list-reset;
+}

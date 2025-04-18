@@ -9,3 +9,28 @@
 .tours__list {
   @include list-reset;
 }
+
+.tours__more {
+  @include link-reset;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  width: fit-content;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4%;
+
+  
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

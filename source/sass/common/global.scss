@@ -76,9 +76,15 @@ img {
   }
 }
 
+.section {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
 .section__title {
   @include h3-font;
 
+  margin: 0;
   padding-top: 16px;
   padding-bottom: 17px;
   margin-bottom: 25px;

@@ -274,13 +274,24 @@
           <div class="tours__navigation navigation">
             <button class="tours__button tours__button--prev navigation__button navigation__button--prev" type="button">
               <span class="visually-hidden">Предыдущий слайд</span>
+              <svg class="navigation__arrow" width="13" height="7">
+                <use href="/__spritemap#sprite-arrow-prev"></use>
+              </svg>
             </button>
             <button class="tours__button tours__button--next navigation__button navigation__button--next" type="button">
               <span class="visually-hidden">Следующий слайд</span>
+              <svg c width="13" height="7">
+                <use href="/__spritemap#sprite-arrow-next"></use>
+              </svg>
             </button>
           </div>
         </div>
-        <a class="tours__more" href="#">Показать все туры</a>
+        <a class="tours__more" href="#">
+          <span>Показать все туры</span>
+          <svg c width="9" height="14">
+            <use href="/__spritemap#sprite-arrow-more"></use>
+          </svg>
+        </a>
       </div>
     </section>
     <section class="section training" id="training">
@@ -289,69 +300,96 @@
         <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа,
           Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
         <section class="section instructors">
-          <h2 class="section__title">Наши инструкторы</h2>
-          <ul class="instructors__list">
-            <li class="instructors__item instructor">
-              <img src="#" alt="">
-              <div class="instructor__head">
-                <h3>Александр Прокофьев</h3>
-                <a class="instructor__social" href="#">
-                  <span class="visually__hidden">Профиль инструктора во ВКонтакте</span>
-                </a>
-              </div>
-              <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
-            </li>
-            <li class="instructors__item instructor">
-              <img src="#" alt="">
-              <div class="instructor__head">
-                <h3>Светлана Афиногенова</h3>
-                <a class="instructor__social" href="#">
-                  <span class="visually__hidden">Профиль инструктора во ВКонтакте</span>
-                </a>
-              </div>
-              <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом
-                назначение жизни.</p>
-            </li>
-            <li class="instructors__item instructor">
-              <img src="#" alt="">
-              <div class="instructor__head">
-                <h3>Надежда Колесниченко</h3>
-                <a class="instructor__social" href="#">
-                  <span class="visually__hidden">Профиль инструктора во ВКонтакте</span>
-                </a>
-              </div>
-              <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя
-                спокойно и уверенно.</p>
-            </li>
-            <li class="instructors__item instructor">
-              <img src="#" alt="">
-              <div class="instructor__head">
-                <h3>Федор Кайгородов</h3>
-                <a class="instructor__social" href="#">
-                  <span class="visually__hidden">Профиль инструктора во ВКонтакте</span>
-                </a>
-              </div>
-              <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
-                путешествует по Европе.</p>
-            </li>
-            <li class="instructors__item instructor">
-              <img src="#" alt="">
-              <div class="instructor__head">
-                <h3>Даниэль Васнецов</h3>
-                <a class="instructor__social" href="#">
-                  <span class="visually__hidden">Профиль инструктора во ВКонтакте</span>
-                </a>
-              </div>
-              <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
-            </li>
-          </ul>
-          <div class="instructors__navigation navigation">
-            <button class="navigation__button navigation__button--prev" type="button">
-              <span class="visually-hidden">Предыдущий слайд</span>
-            </button>
-            <button class="navigation__button navigation__button--next" type="button">
-              <span class="visually-hidden">Следующий слайд</span>
-            </button>
+          <div class="instructors__swiper">
+            <h2 class="section__title">Наши инструкторы</h2>
+            <ul class="instructors__list swiper-wrapper">
+              <li class="instructors__item instructor swiper-slide">
+                <picture>
+                  <source width="260" height="200" type="image/webp"
+                    srcset="img/content/instructors/instructors-prokofiev@1x.webp 1x, img/content/instructors/instructors-prokofiev@2x.webp 2x">
+                  <img class="instructor__img" src="img/content/instructors/instructors-prokofiev@1x.jpg" srcset="img/content/instructors/instructors-prokofiev@2x.jpg" width="260" height="200" alt="">
+                </picture>
+                <div class="instructor__head">
+                  <h3>Александр Прокофьев</h3>
+                  <a class="instructor__social" href="#">
+                    <span class="visually-hidden">Профиль инструктора во ВКонтакте</span>
+                  </a>
+                </div>
+                <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+              </li>
+              <li class="instructors__item instructor swiper-slide">
+                <picture>
+                  <source width="260" height="200" type="image/webp"
+                    srcset="img/content/instructors/instructors-afinogenova@1x.webp 1x, img/content/instructors/instructors-afinogenova@2x.webp 2x">
+                  <img class="instructor__img" src="img/content/instructors/instructors-afinogenova@1x.jpg" srcset="img/content/instructors/instructors-afinogenova@2x.jpg" width="260" height="200" alt="">
+                </picture>
+                <div class="instructor__head">
+                  <h3>Светлана Афиногенова</h3>
+                  <a class="instructor__social" href="#">
+                    <span class="visually-hidden">Профиль инструктора во ВКонтакте</span>
+                  </a>
+                </div>
+                <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+              </li>
+              <li class="instructors__item instructor swiper-slide">
+                <picture>
+                  <source width="260" height="200" type="image/webp"
+                    srcset="img/content/instructors/instructors-kolesnichenko@1x.webp 1x, img/content/instructors/instructors-kolesnichenko@2x.webp 2x">
+                  <img class="instructor__img" src="img/content/instructors/instructors-kolesnichenko@1x.jpg" srcset="img/content/instructors/instructors-kolesnichenko@2x.jpg" width="260" height="200" alt="">
+                </picture>
+                <div class="instructor__head">
+                  <h3>Надежда Колесниченко</h3>
+                  <a class="instructor__social" href="#">
+                    <span class="visually-hidden">Профиль инструктора во ВКонтакте</span>
+                  </a>
+                </div>
+                <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя
+                  спокойно и уверенно.</p>
+              </li>
+              <li class="instructors__item instructor swiper-slide">
+                <picture>
+                  <source width="260" height="200" type="image/webp"
+                    srcset="img/content/instructors/instructors-kaygorodov@1x.webp 1x, img/content/instructors/instructors-kaygorodov@2x.webp 2x">
+                  <img class="instructor__img" src="img/content/instructors/instructors-kaygorodov@1x.jpg" srcset="img/content/instructors/instructors-kaygorodov@2x.jpg" width="260" height="200" alt="">
+                </picture>
+                <div class="instructor__head">
+                  <h3>Федор Кайгородов</h3>
+                  <a class="instructor__social" href="#">
+                    <span class="visually-hidden">Профиль инструктора во ВКонтакте</span>
+                  </a>
+                </div>
+                <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
+                  путешествует по Европе.</p>
+              </li>
+              <li class="instructors__item instructor swiper-slide">
+                <picture>
+                  <source width="260" height="200" type="image/webp"
+                    srcset="img/content/instructors/instructors-vasnetsov@1x.webp 1x, img/content/instructors/instructors-vasnetsov@2x.webp 2x">
+                  <img class="instructor__img" src="img/content/instructors/instructors-vasnetsov@1x.jpg" srcset="img/content/instructors/instructors-vasnetsov@2x.jpg" width="260" height="200" alt="">
+                </picture>
+                <div class="instructor__head">
+                  <h3>Даниэль Васнецов</h3>
+                  <a class="instructor__social" href="#">
+                    <span class="visually-hidden">Профиль инструктора во ВКонтакте</span>
+                  </a>
+                </div>
+                <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+              </li>
+            </ul>
+            <div class="instructors__navigation navigation">
+              <button class="instructors__button instructors__button--prev navigation__button navigation__button--prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
+                <svg class="navigation__arrow" width="13" height="7">
+                  <use href="/__spritemap#sprite-arrow-prev"></use>
+                </svg>
+              </button>
+              <button class="instructors__button instructors__button--next navigation__button navigation__button--next" type="button">
+                <span class="visually-hidden">Следующий слайд</span>
+                <svg c width="13" height="7">
+                  <use href="/__spritemap#sprite-arrow-next"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </section>
         <section class="section training-steps">

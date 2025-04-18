@@ -1,0 +1,47 @@
+.navigation {
+  display: none;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 20px;
+    right: 1px;
+
+    display: flex;
+    gap: 4px;
+  }
+}
+
+.navigation__button {
+  @include button-reset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 35px;
+
+  background-color: #0266C1;
+
+  &:hover {
+    background-color: #ffffff;
+    outline: 1px solid #1C3374;
+  }
+
+  &:focus-visible {
+    background-color: #ffffff;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #1C3374;
+  }
+}
+
+.navigation__button:hover svg path,
+.navigation__button:focus-visible svg path{
+  fill: #1C3374;
+}
+
+.navigation__button:active svg path {
+  fill: #ffffff;
+}

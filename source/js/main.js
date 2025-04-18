@@ -78,3 +78,33 @@ const toursSwiper = new Swiper('.tours__swiper', {
   },
 });
 
+const instructorsSwiper = new Swiper('.instructors__swiper', {
+  modules: [Navigation],
+  speed: 1000,
+  mousewheel: false,
+  simulateTouch: false,
+  autoHeight: true,
+  slidesPerView: 1,
+
+  navigation: {
+    nextEl: '.instructors__button--next',
+    prevEl: '.instructors__button--prev',
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1366: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+});
+
