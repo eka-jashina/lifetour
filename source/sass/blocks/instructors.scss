@@ -1,3 +1,29 @@
+.instructors {
+  padding: 10px 0;
+
+  @media (min-width: $tablet) {
+    padding: 7px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 39px 0;
+  }
+}
+
+.instructors__title {
+  margin-bottom: 7px;
+
+  @media (min-width: $tablet) {
+    padding-top: 23px;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 0;
+    margin-bottom: 15px;
+  }
+}
+
 .instructors__swiper {
   position: relative;
   box-sizing: border-box;
@@ -6,4 +32,9 @@
 
 .instructors__list {
   @include list-reset;
+}
+.instructors__list .instructors__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }

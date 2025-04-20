@@ -54,9 +54,15 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: -17px;
+
+  @media (min-width: $tablet) {
+    margin-top: -62px;
+  }
 
   @media (min-width: $desktop) {
     align-items: flex-start;
+    margin-top: -3px;
   }
 }
 
@@ -68,8 +74,13 @@
 
   text-align: center;
 
+  @media (min-width: $tablet) {
+    margin-bottom: 13px;
+  }
+
   @media (min-width: $desktop) {
-    margin-bottom: 25px;
+    padding-top: 1px;
+    margin-bottom: 24px;
     width: 780px;
 
     text-align: left;
@@ -83,17 +94,21 @@
   margin-bottom: 10px;
   text-align: center;
 
+  @media (min-width: $tablet) {
+    max-width: 580px;
+  }
+
   @media (min-width: $desktop) {
-    width: 470px;
+    max-width: 470px;
     text-align: left;
   }
 }
 
 .hero-slide p:last-of-type {
-  margin-bottom: 60px;
+  margin-bottom: 61px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 35px;
+    margin-bottom: 38px;
   }
 }
 
@@ -114,7 +129,7 @@
 
   display: flex;
   align-items: center;
-  padding: 14px 20px 14px 40px;
+  padding: 0 20px 0 38px;
   min-width: 155px;
   min-height: 44px;
 
@@ -126,7 +141,7 @@
   &::before {
     content: '';
     position: absolute;
-    left: 20px;
+    left: 19px;
 
     width: 12px;
     height: 12px;

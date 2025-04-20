@@ -9,7 +9,7 @@
 </head>
 
 <body class="body">
-  <header class="header">
+  <header class="header" data-test="header">
     <div class="container header__container">
       <nav class="header__nav nav">
         <button class="nav__burger">
@@ -41,7 +41,7 @@
     </div>
   </header>
   <main class="main">
-    <section class="section hero">
+    <section class="section hero" data-test="hero">
       <h1 class="section__title visually-hidden">Туры в горы от Lifetour</h1>
       <div class="hero__swiper">
         <div class="hero__swiper-wrapper swiper-wrapper">
@@ -133,287 +133,299 @@
         <div class="hero__navigation"></div>
       </div>
     </section>
-    <section class="section tours" id="tours">
-      <div class="container tours__container">
-        <div class="tours__swiper">
-          <h2 class="section__title">Ближайшие туры</h2>
-          <ul class="tours__list swiper-wrapper">
-            <li class="tours__item tour swiper-slide">
-              <div class="tour__content">
-                <h3 class="tour__title">Путешествие вокруг Эльбруса</h3>
-                <div class="tour__route">
-                  <span class="tour__location">Кавказ</span>
-                  <span class="tour__duration">
-                    <span class="tour__days">4 дня</span>
-                    <span class="tour__nights">3 ночи</span>
-                  </span>
+    <div class="background-wrapper">
+      <section class="section tours" id="tours" data-test="tours">
+        <div class="container tours__container">
+          <div class="tours__swiper">
+            <h2 class="section__title">Ближайшие туры</h2>
+            <ul class="tours__list swiper-wrapper">
+              <li class="tours__item tour swiper-slide">
+                <div class="tour__content">
+                  <h3 class="tour__title">Путешествие вокруг Эльбруса</h3>
+                  <div class="tour__route">
+                    <span class="tour__location">Кавказ</span>
+                    <span class="tour__duration">
+                      <span class="tour__days">4 дня</span>
+                      <span class="tour__nights">3 ночи</span>
+                    </span>
+                  </div>
+                  <dl class="tour__details">
+                    <div class="tour__detail">
+                      <dt class="tour__subtitle">Сложность:</dt>
+                      <dd class="tour__description tour__description--level tour__description--level-4">
+                        <span class="visually-hidden">4 из 5</span>
+                      </dd>
+                    </div>
+                    <div class="tour__detail">
+                      <dt class="tour__subtitle">Даты набора:</dt>
+                      <dd class="tour__description">12.06–19.06</dd>
+                    </div>
+                    <div class="tour__detail">
+                      <dt class="tour__subtitle">Группа:</dt>
+                      <dd class="tour__description">до 15 чел.</dd>
+                    </div>
+                  </dl>
                 </div>
-                <dl class="tour__details">
-                  <div class="tour__detail">
-                    <dt class="tour__subtitle">Сложность:</dt>
-                    <dd class="tour__description tour__description--level tour__description--level-4">
-                      <span class="visually-hidden">4 из 5</span>
-                    </dd>
-                  </div>
-                  <div class="tour__detail">
-                    <dt class="tour__subtitle">Даты набора:</dt>
-                    <dd class="tour__description">12.06–19.06</dd>
-                  </div>
-                  <div class="tour__detail">
-                    <dt class="tour__subtitle">Группа:</dt>
-                    <dd class="tour__description">до 15 чел.</dd>
-                  </div>
-                </dl>
-              </div>
-            <picture>
-              <source width="380" height="416" type="image/webp"
-                srcset="img/content/tours/tours-elbrus@1x.webp 1x, img/content/tours/tours-elbrus@2x.webp 2x">
-              <img class="tour__img" src="img/content/tours/tours-elbrus@1x.jpg" srcset="img/content/tours/tours-elbrus@2x.jpg" width="380" height="416" alt="">
-            </picture>
-            </li>
-            <li class="tours__item tour swiper-slide">
-              <div class="tour__content">
-                <h3 class="tour__title">Путь к подножию Белухи</h3>
-                <div class="tour__route">
-                  <span class="tour__location">Алтай</span>
-                  <span class="tour__duration">
-                    <span class="tour__days">14 дней</span>
-                    <span class="tour__nights">13 ночей</span>
-                  </span>
-                </div>
-                <dl class="tour__details">
-                  <div class="tour__detail">
-                    <dt class="tour__subtitle">Сложность:</dt>
-                    <dd class="tour__description tour__description--level tour__description--level-3">
-                      <span class="visually-hidden">3 из 5</span>
-                    </dd>
-                  </div>
-                  <div class="tour__detail">
-                    <dt class="tour__subtitle">Даты набора:</dt>
-                    <dd class="tour__description">14.06–23.06</dd>
-                  </div>
-                  <div class="tour__detail">
-                    <dt class="tour__subtitle">Группа:</dt>
-                    <dd class="tour__description">до 25 чел.</dd>
-                  </div>
-                </dl>
-              </div>
               <picture>
                 <source width="380" height="416" type="image/webp"
-                  srcset="img/content/tours/tours-beluha@1x.webp 1x, img/content/tours/tours-beluha@2x.webp 2x">
-                <img class="tour__img" src="img/content/tours/tours-beluha@1x.jpg" srcset="img/content/tours/tours-beluha@2x.jpg" width="380" height="416" alt="">
+                  srcset="img/content/tours/tours-elbrus@1x.webp 1x, img/content/tours/tours-elbrus@2x.webp 2x">
+                <img class="tour__img" src="img/content/tours/tours-elbrus@1x.jpg" srcset="img/content/tours/tours-elbrus@2x.jpg" width="380" height="416" alt="">
               </picture>
-            </li>
-            <li class="tours__item tour swiper-slide">
-              <div class="tour__content">
-                <h3 class="tour__title">Через Фишт к Чёрному морю и обратно</h3>
-                <div class="tour__route">
-                  <span class="tour__location">Адыгея</span>
-                  <span class="tour__duration">
-                    <span class="tour__days">7 дней</span>
-                    <span class="tour__nights">6 ночей</span>
-                  </span>
-                </div>
-                <dl class="tour__details">
-                  <div class="tour__detail">
-                    <dt class="tour__subtitle">Сложность:</dt>
-                    <dd class="tour__description tour__description--level tour__description--level-4">
-                      <span class="visually-hidden">4 из 5</span>
-                    </dd>
-                  </div>
-                  <div class="tour__detail">
-                    <dt class="tour__subtitle">Даты набора:</dt>
-                    <dd class="tour__description">15.07–19.07</dd>
-                  </div>
-                  <div class="tour__detail">
-                    <dt class="tour__subtitle">Группа:</dt>
-                    <dd class="tour__description">до 22 чел.</dd>
-                  </div>
-                </dl>
-              </div>
-              <picture>
-                <source width="380" height="416" type="image/webp"
-                  srcset="img/content/tours/tours-fisht@1x.webp 1x, img/content/tours/tours-fisht@2x.webp 2x">
-                <img class="tour__img" src="img/content/tours/tours-fisht@1x.jpg" srcset="img/content/tours/tours-fisht@2x.jpg" width="380" height="416" alt="">
-              </picture>
-            </li>
-            <li class="tours__item tour swiper-slide">
-              <div class="tour__content">
-                <h3 class="tour__title">Восхождение Манарага</h3>
-                <div class="tour__route">
-                  <span class="tour__location">Урал</span>
-                  <span class="tour__duration">
-                    <span class="tour__days">9 дней</span>
-                    <span class="tour__nights">10 ночей</span>
-                  </span>
-                </div>
-                <dl class="tour__details">
-                  <div class="tour__detail">
-                    <dt class="tour__subtitle">Сложность:</dt>
-                    <dd class="tour__description tour__description--level tour__description--level-5">
-                      <span class="visually-hidden">5 из 5</span>
-                    </dd>
-                  </div>
-                  <div class="tour__detail">
-                    <dt class="tour__subtitle">Даты набора:</dt>
-                    <dd class="tour__description">12.07–19.07</dd>
-                  </div>
-                  <div class="tour__detail">
-                    <dt class="tour__subtitle">Группа:</dt>
-                    <dd class="tour__description">до 7 чел.</dd>
-                  </div>
-                </dl>
-              </div>
-              <picture>
-                <source width="380" height="416" type="image/webp"
-                  srcset="img/content/tours/tours-manarag@1x.webp 1x, img/content/tours/tours-manarag@2x.webp 2x">
-                <img class="tour__img" src="img/content/tours/tours-manarag@1x.jpg" srcset="img/content/tours/tours-manarag@2x.jpg" width="380" height="416" alt="">
-              </picture>
-            </li>
-          </ul>
-          <div class="tours__navigation navigation">
-            <button class="tours__button tours__button--prev navigation__button navigation__button--prev" type="button">
-              <span class="visually-hidden">Предыдущий слайд</span>
-              <svg class="navigation__arrow" width="13" height="7">
-                <use href="/__spritemap#sprite-arrow-prev"></use>
-              </svg>
-            </button>
-            <button class="tours__button tours__button--next navigation__button navigation__button--next" type="button">
-              <span class="visually-hidden">Следующий слайд</span>
-              <svg c width="13" height="7">
-                <use href="/__spritemap#sprite-arrow-next"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <a class="tours__more" href="#">
-          <span>Показать все туры</span>
-          <svg c width="9" height="14">
-            <use href="/__spritemap#sprite-arrow-more"></use>
-          </svg>
-        </a>
-      </div>
-    </section>
-    <section class="section training" id="training">
-      <div class="container">
-        <h2 class="section__title">Обучение</h2>
-        <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа,
-          Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
-        <section class="section instructors">
-          <div class="instructors__swiper">
-            <h2 class="section__title">Наши инструкторы</h2>
-            <ul class="instructors__list swiper-wrapper">
-              <li class="instructors__item instructor swiper-slide">
-                <picture>
-                  <source width="260" height="200" type="image/webp"
-                    srcset="img/content/instructors/instructors-prokofiev@1x.webp 1x, img/content/instructors/instructors-prokofiev@2x.webp 2x">
-                  <img class="instructor__img" src="img/content/instructors/instructors-prokofiev@1x.jpg" srcset="img/content/instructors/instructors-prokofiev@2x.jpg" width="260" height="200" alt="">
-                </picture>
-                <div class="instructor__head">
-                  <h3>Александр Прокофьев</h3>
-                  <a class="instructor__social" href="#">
-                    <span class="visually-hidden">Профиль инструктора во ВКонтакте</span>
-                  </a>
-                </div>
-                <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
               </li>
-              <li class="instructors__item instructor swiper-slide">
-                <picture>
-                  <source width="260" height="200" type="image/webp"
-                    srcset="img/content/instructors/instructors-afinogenova@1x.webp 1x, img/content/instructors/instructors-afinogenova@2x.webp 2x">
-                  <img class="instructor__img" src="img/content/instructors/instructors-afinogenova@1x.jpg" srcset="img/content/instructors/instructors-afinogenova@2x.jpg" width="260" height="200" alt="">
-                </picture>
-                <div class="instructor__head">
-                  <h3>Светлана Афиногенова</h3>
-                  <a class="instructor__social" href="#">
-                    <span class="visually-hidden">Профиль инструктора во ВКонтакте</span>
-                  </a>
+              <li class="tours__item tour swiper-slide">
+                <div class="tour__content">
+                  <h3 class="tour__title">Путь к подножию Белухи</h3>
+                  <div class="tour__route">
+                    <span class="tour__location">Алтай</span>
+                    <span class="tour__duration">
+                      <span class="tour__days">14 дней</span>
+                      <span class="tour__nights">13 ночей</span>
+                    </span>
+                  </div>
+                  <dl class="tour__details">
+                    <div class="tour__detail">
+                      <dt class="tour__subtitle">Сложность:</dt>
+                      <dd class="tour__description tour__description--level tour__description--level-3">
+                        <span class="visually-hidden">3 из 5</span>
+                      </dd>
+                    </div>
+                    <div class="tour__detail">
+                      <dt class="tour__subtitle">Даты набора:</dt>
+                      <dd class="tour__description">14.06–23.06</dd>
+                    </div>
+                    <div class="tour__detail">
+                      <dt class="tour__subtitle">Группа:</dt>
+                      <dd class="tour__description">до 25 чел.</dd>
+                    </div>
+                  </dl>
                 </div>
-                <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+                <picture>
+                  <source width="380" height="416" type="image/webp"
+                    srcset="img/content/tours/tours-beluha@1x.webp 1x, img/content/tours/tours-beluha@2x.webp 2x">
+                  <img class="tour__img" src="img/content/tours/tours-beluha@1x.jpg" srcset="img/content/tours/tours-beluha@2x.jpg" width="380" height="416" alt="">
+                </picture>
               </li>
-              <li class="instructors__item instructor swiper-slide">
-                <picture>
-                  <source width="260" height="200" type="image/webp"
-                    srcset="img/content/instructors/instructors-kolesnichenko@1x.webp 1x, img/content/instructors/instructors-kolesnichenko@2x.webp 2x">
-                  <img class="instructor__img" src="img/content/instructors/instructors-kolesnichenko@1x.jpg" srcset="img/content/instructors/instructors-kolesnichenko@2x.jpg" width="260" height="200" alt="">
-                </picture>
-                <div class="instructor__head">
-                  <h3>Надежда Колесниченко</h3>
-                  <a class="instructor__social" href="#">
-                    <span class="visually-hidden">Профиль инструктора во ВКонтакте</span>
-                  </a>
+              <li class="tours__item tour swiper-slide">
+                <div class="tour__content">
+                  <h3 class="tour__title">Через Фишт к Чёрному морю и обратно</h3>
+                  <div class="tour__route">
+                    <span class="tour__location">Адыгея</span>
+                    <span class="tour__duration">
+                      <span class="tour__days">7 дней</span>
+                      <span class="tour__nights">6 ночей</span>
+                    </span>
+                  </div>
+                  <dl class="tour__details">
+                    <div class="tour__detail">
+                      <dt class="tour__subtitle">Сложность:</dt>
+                      <dd class="tour__description tour__description--level tour__description--level-4">
+                        <span class="visually-hidden">4 из 5</span>
+                      </dd>
+                    </div>
+                    <div class="tour__detail">
+                      <dt class="tour__subtitle">Даты набора:</dt>
+                      <dd class="tour__description">15.07–19.07</dd>
+                    </div>
+                    <div class="tour__detail">
+                      <dt class="tour__subtitle">Группа:</dt>
+                      <dd class="tour__description">до 22 чел.</dd>
+                    </div>
+                  </dl>
                 </div>
-                <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя
-                  спокойно и уверенно.</p>
+                <picture>
+                  <source width="380" height="416" type="image/webp"
+                    srcset="img/content/tours/tours-fisht@1x.webp 1x, img/content/tours/tours-fisht@2x.webp 2x">
+                  <img class="tour__img" src="img/content/tours/tours-fisht@1x.jpg" srcset="img/content/tours/tours-fisht@2x.jpg" width="380" height="416" alt="">
+                </picture>
               </li>
-              <li class="instructors__item instructor swiper-slide">
-                <picture>
-                  <source width="260" height="200" type="image/webp"
-                    srcset="img/content/instructors/instructors-kaygorodov@1x.webp 1x, img/content/instructors/instructors-kaygorodov@2x.webp 2x">
-                  <img class="instructor__img" src="img/content/instructors/instructors-kaygorodov@1x.jpg" srcset="img/content/instructors/instructors-kaygorodov@2x.jpg" width="260" height="200" alt="">
-                </picture>
-                <div class="instructor__head">
-                  <h3>Федор Кайгородов</h3>
-                  <a class="instructor__social" href="#">
-                    <span class="visually-hidden">Профиль инструктора во ВКонтакте</span>
-                  </a>
+              <li class="tours__item tour swiper-slide">
+                <div class="tour__content">
+                  <h3 class="tour__title">Восхождение Манарага</h3>
+                  <div class="tour__route">
+                    <span class="tour__location">Урал</span>
+                    <span class="tour__duration">
+                      <span class="tour__days">9 дней</span>
+                      <span class="tour__nights">10 ночей</span>
+                    </span>
+                  </div>
+                  <dl class="tour__details">
+                    <div class="tour__detail">
+                      <dt class="tour__subtitle">Сложность:</dt>
+                      <dd class="tour__description tour__description--level tour__description--level-5">
+                        <span class="visually-hidden">5 из 5</span>
+                      </dd>
+                    </div>
+                    <div class="tour__detail">
+                      <dt class="tour__subtitle">Даты набора:</dt>
+                      <dd class="tour__description">12.07–19.07</dd>
+                    </div>
+                    <div class="tour__detail">
+                      <dt class="tour__subtitle">Группа:</dt>
+                      <dd class="tour__description">до 7 чел.</dd>
+                    </div>
+                  </dl>
                 </div>
-                <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
-                  путешествует по Европе.</p>
-              </li>
-              <li class="instructors__item instructor swiper-slide">
                 <picture>
-                  <source width="260" height="200" type="image/webp"
-                    srcset="img/content/instructors/instructors-vasnetsov@1x.webp 1x, img/content/instructors/instructors-vasnetsov@2x.webp 2x">
-                  <img class="instructor__img" src="img/content/instructors/instructors-vasnetsov@1x.jpg" srcset="img/content/instructors/instructors-vasnetsov@2x.jpg" width="260" height="200" alt="">
+                  <source width="380" height="416" type="image/webp"
+                    srcset="img/content/tours/tours-manarag@1x.webp 1x, img/content/tours/tours-manarag@2x.webp 2x">
+                  <img class="tour__img" src="img/content/tours/tours-manarag@1x.jpg" srcset="img/content/tours/tours-manarag@2x.jpg" width="380" height="416" alt="">
                 </picture>
-                <div class="instructor__head">
-                  <h3>Даниэль Васнецов</h3>
-                  <a class="instructor__social" href="#">
-                    <span class="visually-hidden">Профиль инструктора во ВКонтакте</span>
-                  </a>
-                </div>
-                <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
               </li>
             </ul>
-            <div class="instructors__navigation navigation">
-              <button class="instructors__button instructors__button--prev navigation__button navigation__button--prev" type="button">
+            <div class="tours__navigation navigation">
+              <button class="tours__button tours__button--prev navigation__button navigation__button--prev" type="button">
                 <span class="visually-hidden">Предыдущий слайд</span>
                 <svg class="navigation__arrow" width="13" height="7">
                   <use href="/__spritemap#sprite-arrow-prev"></use>
                 </svg>
               </button>
-              <button class="instructors__button instructors__button--next navigation__button navigation__button--next" type="button">
+              <button class="tours__button tours__button--next navigation__button navigation__button--next" type="button">
                 <span class="visually-hidden">Следующий слайд</span>
-                <svg c width="13" height="7">
+                <svg class="navigation__arrow" width="13" height="7">
                   <use href="/__spritemap#sprite-arrow-next"></use>
                 </svg>
               </button>
             </div>
           </div>
-        </section>
-        <section class="section training-steps">
-          <h2 class="section__title">Процесс обучения</h2>
-          <ol class="training-steps__list">
-            <li class="training-steps__item">Изучение спортивного туристского движения</li>
-            <li class="training-steps__item">Подготовка и техническое снаряжение в походах</li>
-            <li class="training-steps__item">Лекции по окружающей среде, экологии и гигиене</li>
-            <li class="training-steps__item">Разъяснение сложности горных препятствий</li>
-          </ol>
-        </section>
-      </div>
-    </section>
-    <section class="section about" id="about">
-      <div class="container">
-        <h2 class="section__title">О нас</h2>
-        <h3>История компании</h3>
-        <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько
-          понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям
-          удивительные места нашей страны.</p>
-        <h3>Наша цель</h3>
-        <p>Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы.
-          При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым
-          приключением в приятной компании.</p>
+          <a class="tours__more" href="#">
+            <span>Показать все туры</span>
+            <svg c width="9" height="14">
+              <use href="/__spritemap#sprite-arrow-more"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="section training" id="training" data-test="training">
+        <div class="container">
+          <h2 class="section__title training__title">Обучение</h2>
+          <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа,
+            Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+          <section class="section instructors">
+            <div class="instructors__swiper">
+              <h2 class="section__title instructors__title">Наши инструкторы</h2>
+              <ul class="instructors__list swiper-wrapper">
+                <li class="instructors__item instructor swiper-slide">
+                  <picture>
+                    <source width="260" height="200" type="image/webp"
+                      srcset="img/content/instructors/instructors-prokofiev@1x.webp 1x, img/content/instructors/instructors-prokofiev@2x.webp 2x">
+                    <img class="instructor__img" src="img/content/instructors/instructors-prokofiev@1x.jpg" srcset="img/content/instructors/instructors-prokofiev@2x.jpg" width="260" height="200" alt="">
+                  </picture>
+                  <div class="instructor__head">
+                    <h3>Александр Прокофьев</h3>
+                    <a class="instructor__social" href="#">
+                      <span class="visually-hidden">Профиль инструктора во ВКонтакте</span>
+                    </a>
+                  </div>
+                  <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                </li>
+                <li class="instructors__item instructor swiper-slide">
+                  <picture>
+                    <source width="260" height="200" type="image/webp"
+                      srcset="img/content/instructors/instructors-afinogenova@1x.webp 1x, img/content/instructors/instructors-afinogenova@2x.webp 2x">
+                    <img class="instructor__img" src="img/content/instructors/instructors-afinogenova@1x.jpg" srcset="img/content/instructors/instructors-afinogenova@2x.jpg" width="260" height="200" alt="">
+                  </picture>
+                  <div class="instructor__head">
+                    <h3>Светлана Афиногенова</h3>
+                    <a class="instructor__social" href="#">
+                      <span class="visually-hidden">Профиль инструктора во ВКонтакте</span>
+                    </a>
+                  </div>
+                  <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+                </li>
+                <li class="instructors__item instructor swiper-slide">
+                  <picture>
+                    <source width="260" height="200" type="image/webp"
+                      srcset="img/content/instructors/instructors-kolesnichenko@1x.webp 1x, img/content/instructors/instructors-kolesnichenko@2x.webp 2x">
+                    <img class="instructor__img" src="img/content/instructors/instructors-kolesnichenko@1x.jpg" srcset="img/content/instructors/instructors-kolesnichenko@2x.jpg" width="260" height="200" alt="">
+                  </picture>
+                  <div class="instructor__head">
+                    <h3>Надежда Колесниченко</h3>
+                    <a class="instructor__social" href="#">
+                      <span class="visually-hidden">Профиль инструктора во ВКонтакте</span>
+                    </a>
+                  </div>
+                  <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя
+                    спокойно и уверенно.</p>
+                </li>
+                <li class="instructors__item instructor swiper-slide">
+                  <picture>
+                    <source width="260" height="200" type="image/webp"
+                      srcset="img/content/instructors/instructors-kaygorodov@1x.webp 1x, img/content/instructors/instructors-kaygorodov@2x.webp 2x">
+                    <img class="instructor__img" src="img/content/instructors/instructors-kaygorodov@1x.jpg" srcset="img/content/instructors/instructors-kaygorodov@2x.jpg" width="260" height="200" alt="">
+                  </picture>
+                  <div class="instructor__head">
+                    <h3>Федор Кайгородов</h3>
+                    <a class="instructor__social" href="#">
+                      <span class="visually-hidden">Профиль инструктора во ВКонтакте</span>
+                    </a>
+                  </div>
+                  <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
+                    путешествует по Европе.</p>
+                </li>
+                <li class="instructors__item instructor swiper-slide">
+                  <picture>
+                    <source width="260" height="200" type="image/webp"
+                      srcset="img/content/instructors/instructors-vasnetsov@1x.webp 1x, img/content/instructors/instructors-vasnetsov@2x.webp 2x">
+                    <img class="instructor__img" src="img/content/instructors/instructors-vasnetsov@1x.jpg" srcset="img/content/instructors/instructors-vasnetsov@2x.jpg" width="260" height="200" alt="">
+                  </picture>
+                  <div class="instructor__head">
+                    <h3>Даниэль Васнецов</h3>
+                    <a class="instructor__social" href="#">
+                      <span class="visually-hidden">Профиль инструктора во ВКонтакте</span>
+                    </a>
+                  </div>
+                  <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+                </li>
+              </ul>
+              <div class="instructors__navigation navigation">
+                <button class="instructors__button instructors__button--prev navigation__button navigation__button--prev" type="button">
+                  <span class="visually-hidden">Предыдущий слайд</span>
+                  <svg class="navigation__arrow" width="13" height="7">
+                    <use href="/__spritemap#sprite-arrow-prev"></use>
+                  </svg>
+                </button>
+                <button class="instructors__button instructors__button--next navigation__button navigation__button--next" type="button">
+                  <span class="visually-hidden">Следующий слайд</span>
+                  <svg c width="13" height="7">
+                    <use href="/__spritemap#sprite-arrow-next"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="section training-steps">
+            <h2 class="section__title training-steps__title">Процесс обучения</h2>
+            <ol class="training-steps__list">
+              <li class="training-steps__item training-steps__item--1">
+                <p class="training-steps__text">Изучение спортивного туристского движения</p>
+              </li>
+              <li class="training-steps__item training-steps__item--2">
+                <p class="training-steps__text">Подготовка и техническое снаряжение в походах</p>
+              </li>
+              <li class="training-steps__item training-steps__item--3">
+                <p class="training-steps__text">Лекции по окружающей среде, экологии и гигиене</p>
+              </li>
+              <li class="training-steps__item training-steps__item--4">
+                <p class="training-steps__text">Разъяснение сложности горных препятствий</p>
+              </li>
+            </ol>
+          </section>
+        </div>
+      </section>
+    </div>
+    <section class="section about" id="about" data-test="about">
+      <div class="container about__container">
+        <div class="about__content">
+          <h2 class="section__title about__title">О нас</h2>
+          <h3>История компании</h3>
+          <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько
+            понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям
+            удивительные места нашей страны.</p>
+          <h3>Наша цель</h3>
+          <p>Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы.
+            При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым
+            приключением в приятной компании.</p>
+        </div>
       </div>
     </section>
     <section class="section reviews" id="reviews">

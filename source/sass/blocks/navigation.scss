@@ -4,7 +4,7 @@
   @media (min-width: $tablet) {
     position: absolute;
     top: 20px;
-    right: 1px;
+    right: 0;
 
     display: flex;
     gap: 4px;
@@ -34,6 +34,11 @@
 
   &:active {
     background-color: #1C3374;
+  }
+
+  &:disabled {
+    background-color: #999999;
+    pointer-events: none;
   }
 }
 

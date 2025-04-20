@@ -1,12 +1,10 @@
 .instructor {
   box-sizing: border-box;
-  
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 15px;
+
+  padding: 15px 14px;
   min-height: 356px;
 
+  background-color: #ffffff;
   border: 1px solid #0266C11A;
 
   @media (min-width: $tablet) {
@@ -20,12 +18,45 @@
 
 .instructor__img {
   display: block;
+  height: 200px;
+  object-fit: cover;
+}
+
+.instructor__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.instructor__social {
+  @include link-reset;
+
+  width: 24px;
+  height: 24px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 8px;
+  background-image: url("/__spritemap#sprite-vk-view");
+
+  border: 1px solid rgba(45, 56, 63, 0.3)
 }
 
 .instructor h3 {
   margin: 0;
+  max-width: 145px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
 }
 
 .instructor p {
   margin: 0;
+  margin-top: -2px;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
 }

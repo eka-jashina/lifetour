@@ -78,6 +78,20 @@ const toursSwiper = new Swiper('.tours__swiper', {
   },
 });
 
+function equalizeSwiperSlideHeights(swiper) {
+  let maxHeight = 0;
+
+  swiper.slides.forEach(slide => {
+    slide.style.height = 'auto';
+    const height = slide.offsetHeight;
+    if (height > maxHeight) maxHeight = height;
+  });
+
+  swiper.slides.forEach(slide => {
+    slide.style.height = `${maxHeight}px`;
+  });
+}
+
 const instructorsSwiper = new Swiper('.instructors__swiper', {
   modules: [Navigation],
   speed: 1000,
@@ -85,6 +99,7 @@ const instructorsSwiper = new Swiper('.instructors__swiper', {
   simulateTouch: false,
   autoHeight: true,
   slidesPerView: 1,
+  initialSlide: window.innerWidth < 768 ? 2 : 0,
 
   navigation: {
     nextEl: '.instructors__button--next',
@@ -106,5 +121,18 @@ const instructorsSwiper = new Swiper('.instructors__swiper', {
     enabled: true,
     onlyInViewport: true,
   },
+
+  on: {
+    init: function () {
+      equalizeSwiperSlideHeights(this);
+    },
+    resize: function () {
+      equalizeSwiperSlideHeights(this);
+    }
+  }
+});
+
+window.addEventListener('load', () => {
+  equalizeSwiperSlideHeights(mySwiper);
 });
 

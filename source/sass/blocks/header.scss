@@ -2,7 +2,7 @@
   position: relative;
   z-index: 2;
 
-  padding: 15px 0;
+  padding: 15px 0 13px;
 
   color: $text-light-color;
 
@@ -10,5 +10,9 @@
 
   @media (min-width: $tablet) {
     padding: 20px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 42px 0;
   }
 }

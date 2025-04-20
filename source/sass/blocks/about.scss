@@ -1,0 +1,111 @@
+.about {
+  padding-top: 18px;
+
+  @media (min-width: $tablet) {
+    padding-top: 39px;
+  }
+  @media (min-width: $desktop) {
+    padding-top: 123px;
+  }
+}
+
+.about__container {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 400px;
+
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-image:
+  image-set(
+    url("../../img/decor/about/about-mobile@1x.webp") type("image/webp") 1x,
+    url("../../img/decor/about/about-mobile@2x.webp") type("image/webp") 2x,
+    url("../../img/decor/about/about-mobile@1x.jpg") type("image/jpeg") 1x,
+    url("../../img/decor/about/about-mobile@2x.jpg") type("image/jpeg") 2x
+  );
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
+
+    background-position: left top 134px;
+    background-image:
+    image-set(
+      url("../../img/decor/about/about-tablet@1x.webp") type("image/webp") 1x,
+      url("../../img/decor/about/about-tablet@2x.webp") type("image/webp") 2x,
+      url("../../img/decor/about/about-tablet@1x.jpg") type("image/jpeg") 1x,
+      url("../../img/decor/about/about-tablet@2x.jpg") type("image/jpeg") 2x
+    );
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 498px;
+    background-position: left top -22px;
+    background-image:
+    image-set(
+      url("../../img/decor/about/about-desktop@1x.webp") type("image/webp") 1x,
+      url("../../img/decor/about/about-desktop@2x.webp") type("image/webp") 2x,
+      url("../../img/decor/about/about-desktop@1x.jpg") type("image/jpeg") 1x,
+      url("../../img/decor/about/about-desktop@2x.jpg") type("image/jpeg") 2x
+    );
+  }
+}
+
+.about__content {
+  @media (min-width: $tablet) {
+    width: 273px;
+    padding-right: 3px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 660px;
+    padding-right: 60px;
+  }
+}
+
+.about__title {
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 49px;
+  }
+}
+
+.about__content h3 {
+  @include h5-font;
+
+  margin: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 16px;
+  }
+}
+
+.about__content p {
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 29px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

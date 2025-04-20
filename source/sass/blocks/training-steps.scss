@@ -1,0 +1,177 @@
+.training-steps {
+  padding: 15px 0;
+
+  @media (min-width: $tablet) {
+    padding: 19px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 18px 0;
+  }
+}
+
+.training-steps__title {
+  @include h5-font;
+
+  padding: 0;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 19px;
+  }
+}
+
+.training-steps__list {
+  @include list-reset;
+
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  padding-left: 29px;
+  padding-right: 26px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 232px 262px;
+    justify-content: space-between;
+    row-gap: 104px;
+    padding-left: 0;
+    padding-right: 10px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 248px);
+    justify-content: start;
+    gap: 5px;
+    padding-right: 0;
+  }
+}
+
+.training-steps__list::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+
+  padding: 11px 0;
+  width: 2px;
+  height: 100%;
+
+  background-color: #0266C1;
+  background-clip: content-box;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    left: 20px;
+    bottom: 12px;
+
+    display: block;
+    width: 100%;
+    height: 2px;
+    padding: 0;
+    padding-right: 20px;
+  }
+}
+
+.training-steps__item {
+  position: relative;
+
+  padding-left: 34px;
+
+  background-position: top 1px left;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+
+  @media (min-width: $desktop) {
+    padding-top: 8px;
+    padding-bottom: 22px;
+    padding-left: 45px;
+
+    background-position: top 10px left 10px;
+
+  }
+}
+
+.training-steps__item::before {
+  content: "";
+  position: absolute;
+  left: -29px;
+  bottom: 10px;
+
+  width: 14px;
+  height: 14px;
+
+  background-color: #0266C1;
+  border-radius: 50%;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    left: 20px;
+    bottom: 6px;
+    display: block;
+  }
+}
+
+.training-steps__item--1 {
+  background-image: url("/__spritemap#sprite-training-map-view");
+
+  @media (min-width: $tablet) {
+    order: 1;
+  }
+}
+
+.training-steps__item--2 {
+  background-image: url("/__spritemap#sprite-training-boots-view");
+
+  @media (min-width: $tablet) {
+    order: 3;
+  }
+
+  @media (min-width: $desktop) {
+    order: 2;
+  }
+}
+
+.training-steps__item--3 {
+  background-image: url("/__spritemap#sprite-training-tree-view");
+
+  @media (min-width: $tablet) {
+    order: 4;
+  }
+
+  @media (min-width: $desktop) {
+    order: 3;
+
+    &::before {
+      left: 1px;
+    }
+  }
+}
+
+.training-steps__item--4 {
+  background-image: url("/__spritemap#sprite-training-mountain-view");
+
+  @media (min-width: $tablet) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop) {
+    order: 4;
+  }
+}
+
+.training-steps__text {
+  @include text-small-font;
+
+  margin: 0;
+}

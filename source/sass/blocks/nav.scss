@@ -3,12 +3,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  row-gap: 14px;
+  row-gap: 16px;
 }
 
 .nav__burger {
   @include button-reset;
 
+  margin-top: -17px;
   width: 26px;
   height: 26px;
 
@@ -24,6 +25,10 @@
 
   &:focus-visible {
     outline: 1px solid currentColor;
+  }
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
   }
 
   @media (min-width: $desktop) {
@@ -43,8 +48,9 @@
   @media (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     max-width: 830px;
+    padding-left: 30px;
   }
 }
 
@@ -104,6 +110,16 @@
   }
 }
 
+.nav__logo {
+  @media (min-width: $tablet) {
+    margin-left: 114px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 32px;
+  }
+}
+
 .nav__tel {
   @include link-reset;
 
@@ -124,6 +140,8 @@
   }
 
   @media (min-width: $tablet) {
+    padding-top: 3px;
+
     font-size: 16px;
     line-height: 16px;
   }

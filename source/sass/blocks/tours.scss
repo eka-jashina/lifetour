@@ -4,6 +4,14 @@
   overflow: hidden;
 
   margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 54px;
+  }
 }
 
 .tours__list {
@@ -12,11 +20,11 @@
 
 .tours__more {
   @include link-reset;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   padding: 10px;
   margin: 0 auto;
   width: fit-content;
@@ -25,9 +33,7 @@
   line-height: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 4%;
-
-  
+  letter-spacing: 0.6px;
 
   @media (min-width: $tablet) {
     font-size: 16px;
