@@ -245,3 +245,39 @@
     background-color: $disabled-color;
   }
 }
+
+@mixin title-decor {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: fit-content;
+    height: auto;
+
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 800;
+    color: inherit;
+    opacity: 0.03;
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      font-size: 55px;
+      line-height: 55px;
+    }
+  }
+}

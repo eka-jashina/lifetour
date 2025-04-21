@@ -137,7 +137,7 @@
       <section class="section tours" id="tours" data-test="tours">
         <div class="container tours__container">
           <div class="tours__swiper">
-            <h2 class="section__title">Ближайшие туры</h2>
+            <h2 class="section__title section__title--decor" data-text="Ближайшие туры">Ближайшие туры</h2>
             <ul class="tours__list swiper-wrapper">
               <li class="tours__item tour swiper-slide">
                 <div class="tour__content">
@@ -297,7 +297,7 @@
       </section>
       <section class="section training" id="training" data-test="training">
         <div class="container">
-          <h2 class="section__title training__title">Обучение</h2>
+          <h2 class="section__title section__title--decor training__title" data-text="Обучение">Обучение</h2>
           <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа,
             Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
           <section class="section instructors">
@@ -416,7 +416,7 @@
     <section class="section about" id="about" data-test="about">
       <div class="container about__container">
         <div class="about__content">
-          <h2 class="section__title about__title">О нас</h2>
+          <h2 class="section__title section__title--decor about__title" data-text="О нас">О нас</h2>
           <h3>История компании</h3>
           <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько
             понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям
@@ -430,10 +430,14 @@
     </section>
     <section class="section reviews" id="reviews">
       <div class="container">
-        <h2 class="section__title">Отзывы</h2>
+        <h2 class="section__title section__title--decor" data-text="Отзывы">Отзывы</h2>
         <ul class="reviews__list">
           <li class="reviews__item review">
-            <img src="" alt="">
+            <picture>
+              <source width="260" height="200" type="image/webp"
+                srcset="img/content/reviews/reviews-frolov@1x.webp 1x, img/content/reviews/reviews-frolov@2x.webp 2x">
+              <img class="review__img" src="img/content/reviews/reviews-frolov@1x.jpg" srcset="img/content/reviews/reviews-frolov@2x.jpg" width="250" height="169" alt="">
+            </picture>
             <blockquote class="review__content">
               <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты,
                 всему научили, все показали. Делились историями о местах, людях, культуре места.</p>
@@ -444,7 +448,11 @@
             </blockquote>
           </li>
           <li class="reviews__item review">
-            <img src="" alt="">
+            <picture>
+              <source width="260" height="200" type="image/webp"
+                srcset="img/content/reviews/reviews-soloviev@1x.webp 1x, img/content/reviews/reviews-soloviev@2x.webp 2x">
+              <img class="review__img" src="img/content/reviews/reviews-soloviev@1x.jpg" srcset="img/content/reviews/reviews-soloviev@2x.jpg" width="250" height="169" alt="">
+            </picture>
             <blockquote class="review__content">
               <p>Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли
                 мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века. Было очень интересно!
@@ -456,7 +464,11 @@
             </blockquote>
           </li>
           <li class="reviews__item review">
-            <img src="" alt="">
+            <picture>
+              <source width="260" height="200" type="image/webp"
+                srcset="img/content/reviews/reviews-bazhenova@1x.webp 1x, img/content/reviews/reviews-bazhenova@2x.webp 2x">
+              <img class="review__img" src="img/content/reviews/reviews-bazhenova@1x.jpg" srcset="img/content/reviews/reviews-bazhenova@2x.jpg" width="250" height="169" alt="">
+            </picture>
             <blockquote class="review__content">
               <p>Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала
                 на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче,
@@ -468,7 +480,11 @@
             </blockquote>
           </li>
           <li class="reviews__item review">
-            <img src="" alt="">
+            <picture>
+              <source width="260" height="200" type="image/webp"
+                srcset="img/content/reviews/reviews-pirogova@1x.webp 1x, img/content/reviews/reviews-pirogova@2x.webp 2x">
+              <img class="review__img" src="img/content/reviews/reviews-pirogova@1x.jpg" srcset="img/content/reviews/reviews-pirogova@2x.jpg" width="250" height="169" alt="">
+            </picture>
             <blockquote class="review__content">
               <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда
                 наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину. </p>
