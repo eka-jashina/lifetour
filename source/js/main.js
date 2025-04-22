@@ -48,7 +48,7 @@ const heroSwiper = new Swiper('.hero__swiper', {
   },
 });
 
-const toursSwiper = new Swiper('.tours__swiper', {
+/* const toursSwiper = new Swiper('.tours__swiper', {
   modules: [Navigation],
   speed: 1000,
   mousewheel: false,
@@ -66,7 +66,7 @@ const toursSwiper = new Swiper('.tours__swiper', {
       slidesPerView: 2,
       spaceBetween: 18,
     },
-    1366: {
+    1440: {
       slidesPerView: 3,
       spaceBetween: 30,
     },
@@ -77,20 +77,6 @@ const toursSwiper = new Swiper('.tours__swiper', {
     onlyInViewport: true,
   },
 });
-
-function equalizeSwiperSlideHeights(swiper) {
-  let maxHeight = 0;
-
-  swiper.slides.forEach(slide => {
-    slide.style.height = 'auto';
-    const height = slide.offsetHeight;
-    if (height > maxHeight) maxHeight = height;
-  });
-
-  swiper.slides.forEach(slide => {
-    slide.style.height = `${maxHeight}px`;
-  });
-}
 
 const instructorsSwiper = new Swiper('.instructors__swiper', {
   modules: [Navigation],
@@ -111,7 +97,7 @@ const instructorsSwiper = new Swiper('.instructors__swiper', {
       slidesPerView: 3,
       spaceBetween: 20,
     },
-    1366: {
+    1440: {
       slidesPerView: 4,
       spaceBetween: 20,
     },
@@ -121,18 +107,84 @@ const instructorsSwiper = new Swiper('.instructors__swiper', {
     enabled: true,
     onlyInViewport: true,
   },
+});
 
-  on: {
-    init: function () {
-      equalizeSwiperSlideHeights(this);
+const reviewsSwiper = new Swiper('.reviews__swiper', {
+  modules: [Navigation],
+  speed: 1000,
+  mousewheel: false,
+  simulateTouch: false,
+  autoHeight: true,
+  slidesPerView: 1,
+
+  navigation: {
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 1.3,
+      slidesPerGroup: 1,
+      spaceBetween: 30,
     },
-    resize: function () {
-      equalizeSwiperSlideHeights(this);
+    1440: {
+      slidesPerView: 1.72,
+      slidesPerGroup: 1,
+      spaceBetween: 120,
+    },
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+}); */
+
+const advSwiper = document.querySelector('.advantages__container');
+const wrapper = advSwiper.querySelector('.advantages__list');
+const slides = advSwiper.querySelectorAll('.advantage');
+let swiperInstance = null;
+
+function destroySwiper() {
+  if (swiperInstance) {
+    swiperInstance.destroy(true, true);
+    swiperInstance = null;
+
+    // Удаляем классы swiper
+    advSwiper.classList.remove('swiper');
+    advSwiper.classList.remove('swiper-initialized');
+
+    // Удаляем класс swiper-wrapper
+    if (wrapper) {
+      wrapper.classList.remove('swiper-wrapper');
     }
+
+    // Удаляем классы swiper-slide у дочерних элементов
+    slides.forEach(slide => {
+      slide.classList.remove('swiper-slide');
+    });
   }
-});
+}
 
-window.addEventListener('load', () => {
-  equalizeSwiperSlideHeights(mySwiper);
-});
+function toggleSwiper() {
+  const breakpoint = 1440;
 
+  if (window.innerWidth >= breakpoint && !swiperInstance) {
+    // Добавляем классы для Swiper
+    advSwiper.classList.add('swiper');
+    wrapper.classList.add('swiper-wrapper');
+    for (let slide of slides) {
+      slide.classList.add('swiper-slide');
+    }
+
+    swiperInstance = new Swiper('.advantages__container', {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    });
+  } else if (window.innerWidth < breakpoint && swiperInstance) {
+    destroySwiper();
+  }
+}
+
+toggleSwiper();

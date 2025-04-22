@@ -429,111 +429,119 @@
       </div>
     </section>
     <section class="section reviews" id="reviews">
-      <div class="container">
-        <h2 class="section__title section__title--decor" data-text="Отзывы">Отзывы</h2>
-        <ul class="reviews__list">
-          <li class="reviews__item review">
-            <picture>
-              <source width="260" height="200" type="image/webp"
-                srcset="img/content/reviews/reviews-frolov@1x.webp 1x, img/content/reviews/reviews-frolov@2x.webp 2x">
-              <img class="review__img" src="img/content/reviews/reviews-frolov@1x.jpg" srcset="img/content/reviews/reviews-frolov@2x.jpg" width="250" height="169" alt="">
-            </picture>
-            <blockquote class="review__content">
-              <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты,
-                всему научили, все показали. Делились историями о местах, людях, культуре места.</p>
-              <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал
-                так душой и телом. Всем очень рекомендую!</p>
-              <cite>Фролов Александр</cite>
-              <span>38 лет, Москва</span>
-            </blockquote>
-          </li>
-          <li class="reviews__item review">
-            <picture>
-              <source width="260" height="200" type="image/webp"
-                srcset="img/content/reviews/reviews-soloviev@1x.webp 1x, img/content/reviews/reviews-soloviev@2x.webp 2x">
-              <img class="review__img" src="img/content/reviews/reviews-soloviev@1x.jpg" srcset="img/content/reviews/reviews-soloviev@2x.jpg" width="250" height="169" alt="">
-            </picture>
-            <blockquote class="review__content">
-              <p>Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли
-                мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века. Было очень интересно!
-              </p>
-              <p>Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам. Всем советую
-                этот тур.</p>
-              <cite>Иван Соловьёв</cite>
-              <span>25 лет, Владивосток</span>
-            </blockquote>
-          </li>
-          <li class="reviews__item review">
-            <picture>
-              <source width="260" height="200" type="image/webp"
-                srcset="img/content/reviews/reviews-bazhenova@1x.webp 1x, img/content/reviews/reviews-bazhenova@2x.webp 2x">
-              <img class="review__img" src="img/content/reviews/reviews-bazhenova@1x.jpg" srcset="img/content/reviews/reviews-bazhenova@2x.jpg" width="250" height="169" alt="">
-            </picture>
-            <blockquote class="review__content">
-              <p>Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала
-                на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче,
-                чем ожидала, видимо организм уже привык.
-              <p>Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.</p>
-              </p>
-              <cite>Евгения Баженова</cite>
-              <span>23 года, Кострома</span>
-            </blockquote>
-          </li>
-          <li class="reviews__item review">
-            <picture>
-              <source width="260" height="200" type="image/webp"
-                srcset="img/content/reviews/reviews-pirogova@1x.webp 1x, img/content/reviews/reviews-pirogova@2x.webp 2x">
-              <img class="review__img" src="img/content/reviews/reviews-pirogova@1x.jpg" srcset="img/content/reviews/reviews-pirogova@2x.jpg" width="250" height="169" alt="">
-            </picture>
-            <blockquote class="review__content">
-              <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда
-                наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину. </p>
-              <p>У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе
-                у костра и пели песни. Обязательно повторю такое приключение!</p>
-              <cite>Елена Пирогова</cite>
-              <span>37 лет, Тюмень</span>
-            </blockquote>
-          </li>
-        </ul>
-        <div class="reviews__navigation navigation">
-          <button class="navigation__button navigation__button--prev" type="button">
-            <span class="visually-hidden">Предыдущий слайд</span>
-          </button>
-          <button class="navigation__button navigation__button--next" type="button">
-            <span class="visually-hidden">Следующий слайд</span>
-          </button>
+      <div class="container reviews__container">
+        <div class="reviews__swiper">
+          <h2 class="section__title section__title--decor" data-text="Отзывы">Отзывы</h2>
+          <ul class="reviews__list swiper-wrapper">
+            <li class="reviews__item review swiper-slide">
+              <picture class="review__picture">
+                <source width="260" height="200" type="image/webp"
+                  srcset="img/content/reviews/reviews-frolov@1x.webp 1x, img/content/reviews/reviews-frolov@2x.webp 2x">
+                <img class="review__img" src="img/content/reviews/reviews-frolov@1x.jpg" srcset="img/content/reviews/reviews-frolov@2x.jpg" width="250" height="169" alt="">
+              </picture>
+              <blockquote class="review__content">
+                <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты,
+                  всему научили, все показали. Делились историями о местах, людях, культуре места.</p>
+                <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал
+                  так душой и телом. Всем очень рекомендую!</p>
+                <cite>Фролов Александр</cite>
+                <span>38 лет, Москва</span>
+              </blockquote>
+            </li>
+            <li class="reviews__item review swiper-slide">
+              <picture class="review__picture">
+                <source width="260" height="200" type="image/webp"
+                  srcset="img/content/reviews/reviews-soloviev@1x.webp 1x, img/content/reviews/reviews-soloviev@2x.webp 2x">
+                <img class="review__img" src="img/content/reviews/reviews-soloviev@1x.jpg" srcset="img/content/reviews/reviews-soloviev@2x.jpg" width="250" height="169" alt="">
+              </picture>
+              <blockquote class="review__content">
+                <p>Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли
+                  мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века. Было очень интересно!
+                </p>
+                <p>Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам. Всем советую
+                  этот тур.</p>
+                <cite>Иван Соловьёв</cite>
+                <span>25 лет, Владивосток</span>
+              </blockquote>
+            </li>
+            <li class="reviews__item review swiper-slide">
+              <picture class="review__picture">
+                <source width="260" height="200" type="image/webp"
+                  srcset="img/content/reviews/reviews-bazhenova@1x.webp 1x, img/content/reviews/reviews-bazhenova@2x.webp 2x">
+                <img class="review__img" src="img/content/reviews/reviews-bazhenova@1x.jpg" srcset="img/content/reviews/reviews-bazhenova@2x.jpg" width="250" height="169" alt="">
+              </picture>
+              <blockquote class="review__content">
+                <p>Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала
+                  на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче,
+                  чем ожидала, видимо организм уже привык.
+                <p>Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.</p>
+                </p>
+                <cite>Евгения Баженова</cite>
+                <span>23 года, Кострома</span>
+              </blockquote>
+            </li>
+            <li class="reviews__item review swiper-slide">
+              <picture class="review__picture">
+                <source width="260" height="200" type="image/webp"
+                  srcset="img/content/reviews/reviews-pirogova@1x.webp 1x, img/content/reviews/reviews-pirogova@2x.webp 2x">
+                <img class="review__img" src="img/content/reviews/reviews-pirogova@1x.jpg" srcset="img/content/reviews/reviews-pirogova@2x.jpg" width="250" height="169" alt="">
+              </picture>
+              <blockquote class="review__content">
+                <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда
+                  наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину. </p>
+                <p>У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе
+                  у костра и пели песни. Обязательно повторю такое приключение!</p>
+                <cite>Елена Пирогова</cite>
+                <span>37 лет, Тюмень</span>
+              </blockquote>
+            </li>
+          </ul>
+          <div class="reviews__navigation navigation">
+            <button class="reviews__button reviews__button--prev navigation__button navigation__button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+              <svg class="navigation__arrow" width="13" height="7">
+                <use href="/__spritemap#sprite-arrow-prev"></use>
+              </svg>
+            </button>
+            <button class="reviews__button reviews__button--next navigation__button navigation__button--next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+              <svg c width="13" height="7">
+                <use href="/__spritemap#sprite-arrow-next"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>
     <section class="section advantages" id="advantages">
       <div class="container advantages__container">
-        <h2 class="section__title">Преимущества</h2>
+        <h2 class="section__title section__title--decor" data-text="Преимущества">Преимущества</h2>
         <ul class="advantages__list">
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantage advantage--1">
             <h3>Безопасность</h3>
             <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы
               действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.
             </p>
           </li>
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantage advantage--2">
             <h3>Экспертиза и знания</h3>
             <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности.
               Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом
               без опасений.</p>
           </li>
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantage advantage--3">
             <h3>Оборудование и снаряжение</h3>
             <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет
               клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным
               и экономически выгодным.</p>
           </li>
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantage advantage--4">
             <h3>Индивидуальные маршруты</h3>
             <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем
               адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный
               опыт.</p>
           </li>
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantage advantage--5">
             <h3>Бережное отношение к природе</h3>
             <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное
               воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>

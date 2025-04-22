@@ -1,3 +1,33 @@
+.reviews__container {
+  @media (min-width: $tablet) {
+    padding-right: 0;
+  }
+}
+
+.reviews__swiper {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
 .reviews__list {
   @include list-reset;
+}
+
+.reviews__list .reviews__item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.reviews__navigation {
+  @media (min-width: $desktop) {
+    right: 120px;
+  }
 }

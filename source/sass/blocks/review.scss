@@ -1,7 +1,4 @@
 .review {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   padding: 20px;
   
   background-color: #ffffff;
@@ -11,27 +8,30 @@
   line-height: 18px;
   font-weight: 400;
 
-  @media (min-width: $tablet) {
-    flex-direction: row;
-    gap: 30px;
-  }
-
   @media (min-width: $desktop) {
     font-size: 14px;
     line-height: 22px;
   }
 }
 
+.review__picture {
+  flex-shrink: 0;
+}
+
 .review__img {
+  flex-shrink: 0;
   display: block;
   height: 169px;
+  object-fit: cover;
 
   @media (min-width: $tablet) {
-    margin-bottom: 25px;
+    width: 186px;
+    height: 237px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 0;
+    width: 258px;
+    height: 253px;
   }
 }
 
@@ -44,6 +44,10 @@
 .review__content p {
   margin: 0;
   margin-bottom: 10px;
+
+  @media (min-width: $desktop) {
+    max-width: 352px;
+  }
 }
 
 .review__content p:last-of-type {
