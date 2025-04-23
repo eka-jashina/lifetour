@@ -144,6 +144,7 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
 const advSwiper = document.querySelector('.advantages__container');
 const wrapper = advSwiper.querySelector('.advantages__list');
 const slides = advSwiper.querySelectorAll('.advantage');
+
 let swiperInstance = null;
 
 function destroySwiper() {
@@ -179,8 +180,22 @@ function toggleSwiper() {
     }
 
     swiperInstance = new Swiper('.advantages__container', {
-      slidesPerView: 3,
-      spaceBetween: 20,
+      modules: [Navigation],
+      loop: true,
+      speed: 1000,
+      mousewheel: false,
+      simulateTouch: false,
+      autoHeight: true,
+      slidesPerView: 'auto',
+      slidesPerGroup: 2,
+      centeredSlides: true,
+      spaceBetween: 30,
+      initialSlide: 4,
+
+      navigation: {
+        nextEl: '.advantages__button--next',
+        prevEl: '.advantages__button--prev',
+      },
     });
   } else if (window.innerWidth < breakpoint && swiperInstance) {
     destroySwiper();

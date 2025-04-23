@@ -1,5 +1,14 @@
+.advantages .advantages__container {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0;
+}
+
 .advantages__list {
   @include list-reset;
+
+  position: relative;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -9,4 +18,15 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
+
+  @media (min-width: $desktop) {
+    gap: 0;
+  }
 }
+
+.advantages__list .advantages__item {
+  @media (min-width: $desktop) {
+    width: 380px;
+  }
+}
+

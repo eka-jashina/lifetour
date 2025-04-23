@@ -248,7 +248,6 @@
 
 @mixin title-decor {
   position: relative;
-  z-index: 1;
 
   &::before {
     content: attr(data-text);

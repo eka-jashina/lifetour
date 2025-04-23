@@ -1,4 +1,5 @@
 .advantage {
+  box-sizing: border-box;
   position: relative;
   padding: 82px 10px 20px;
   border: 1px solid rgba(2, 102, 193, 0.1);
@@ -16,7 +17,7 @@
     background-position: center;
     background-size: 24px 24px;
     border: 1px solid rgba(2, 102, 193, 0.1);
-    
+
     transform: translateX(-50%);
   }
 
@@ -76,6 +77,14 @@
       width: 54px;
       height: 54px;
     }
+  }
+}
+
+.advantage--fake {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
   }
 }
 
