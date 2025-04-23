@@ -48,7 +48,7 @@ const heroSwiper = new Swiper('.hero__swiper', {
   },
 });
 
-/* const toursSwiper = new Swiper('.tours__swiper', {
+const toursSwiper = new Swiper('.tours__swiper', {
   modules: [Navigation],
   speed: 1000,
   mousewheel: false,
@@ -139,7 +139,7 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
     enabled: true,
     onlyInViewport: true,
   },
-}); */
+});
 
 const advSwiper = document.querySelector('.advantages__container');
 const wrapper = advSwiper.querySelector('.advantages__list');

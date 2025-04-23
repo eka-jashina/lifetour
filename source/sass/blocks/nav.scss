@@ -120,6 +120,10 @@
   }
 }
 
+.nav__logo path d {
+  color: #fff;
+}
+
 .nav__tel {
   @include link-reset;
 
