@@ -1,3 +1,24 @@
+.gallery p {
+  margin: 0;
+  margin-bottom: 31px;
+  
+  @media (min-width: $tablet) {
+    max-width: 420px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 592px;
+    margin-bottom: 46px;
+  }
+}
+
+.gallery__swiper {
+  position: relative;
+  box-sizing: border-box;
+  //overflow: hidden;
+}
+
 .gallery__list {
   @include list-reset;
 
@@ -11,4 +32,10 @@
 .gallery__item {
   display: flex;
   flex-direction: column;
+}
+
+.gallery__navigation {
+  position: absolute;
+  top: -45px;
+  right: 0;
 }

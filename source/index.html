@@ -515,7 +515,7 @@
     </section>
     <section class="section advantages" id="advantages">
       <div class="container advantages__container">
-        <h2 class="section__title section__title--decor" data-text="Преимущества">Преимущества</h2>
+        <h2 class="section__title section__title--decor advantages__title" data-text="Преимущества">Преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantage advantage--4 advantage--fake" aria-hidden="true">
             <h3>Индивидуальные маршруты</h3>
@@ -577,13 +577,13 @@
           </li>
         </ul>
         <div class="advantages__navigation navigation">
-          <button class="advantages__button advantages__button--prev navigation__button navigation__button--prev" type="button">
+          <button class="advantages__button advantages__button--prev navigation__button navigation__button-prev" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
             <svg class="navigation__arrow" width="13" height="7">
               <use href="/__spritemap#sprite-arrow-prev"></use>
             </svg>
           </button>
-          <button class="advantages__button advantages__button--next navigation__button navigation__button--next" type="button">
+          <button class="advantages__button advantages__button--next navigation__button navigation__button-next" type="button">
             <span class="visually-hidden">Следующий слайд</span>
             <svg class="navigation__arrow" width="13" height="7">
               <use href="/__spritemap#sprite-arrow-next"></use>
@@ -594,70 +594,86 @@
     </section>
     <section class="section gallery" id="gallery">
       <div class="container">
-        <h2 class="section__title">Фотогалерея</h2>
+        <h2 class="section__title section__title--decor" data-text="Фотогалерея">Фотогалерея</h2>
         <p>Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел
           нашего сайта.</p>
-        <ul class="gallery__list">
-          <li class="gallery__item">
-            <a class="gallery__link" href="img/content/gallery/gallery-large-1.jpg" target="_blank" rel="noopener noreferrer">
-              <picture>
-                <source width="380" height="250" type="image/webp"
-                  srcset="img/content/gallery/gallery-small-1@1x.webp 1x, img/content/gallery/gallery-small-1@2x.webp 2x">
-                <img class="gallery__img" src="img/content/gallery/gallery-small-1@1x.jpg" srcset="img/content/gallery/gallery-small-1@2x.jpg" width="158" height="266" alt="">
-              </picture>
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="img/content/gallery/gallery-large-2.jpg" target="_blank" rel="noopener noreferrer">
-              <picture>
-                <source width="380" height="250" type="image/webp"
-                  srcset="img/content/gallery/gallery-small-2@1x.webp 1x, img/content/gallery/gallery-small-2@2x.webp 2x">
-                <img class="gallery__img" src="img/content/gallery/gallery-small-2@1x.jpg" srcset="img/content/gallery/gallery-small-2@2x.jpg" width="158" height="130" alt="">
-              </picture>
-            </a>
-            <a class="gallery__link" href="img/content/gallery/gallery-large-3.jpg" target="_blank" rel="noopener noreferrer">
-              <picture>
-                <source width="380" height="250" type="image/webp"
-                  srcset="img/content/gallery/gallery-small-3@1x.webp 1x, img/content/gallery/gallery-small-3@2x.webp 2x">
-                <img class="gallery__img" src="img/content/gallery/gallery-small-3@1x.jpg" srcset="img/content/gallery/gallery-small-3@2x.jpg" width="158" height="130" alt="">
-              </picture>
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="img/content/gallery/gallery-large-4.jpg" target="_blank" rel="noopener noreferrer">
-              <picture>
-                <source width="380" height="250" type="image/webp"
-                  srcset="img/content/gallery/gallery-small-4@1x.webp 1x, img/content/gallery/gallery-small-4@2x.webp 2x">
-                <img class="gallery__img" src="img/content/gallery/gallery-small-4@1x.jpg" srcset="img/content/gallery/gallery-small-4@2x.jpg" width="158" height="266" alt="">
-              </picture>
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="img/content/gallery/gallery-large-5.jpg" target="_blank" rel="noopener noreferrer">
-              <picture>
-                <source width="380" height="250" type="image/webp"
-                  srcset="img/content/gallery/gallery-small-5@1x.webp 1x, img/content/gallery/gallery-small-5@2x.webp 2x">
-                <img class="gallery__img" src="img/content/gallery/gallery-small-5@1x.jpg" srcset="img/content/gallery/gallery-small-5@2x.jpg" width="158" height="130" alt="">
-              </picture>
-            </a>
-            <a class="gallery__link" href="img/content/gallery/gallery-large-6.jpg" target="_blank" rel="noopener noreferrer">
-              <picture>
-                <source width="380" height="250" type="image/webp"
-                  srcset="img/content/gallery/gallery-small-6@1x.webp 1x, img/content/gallery/gallery-small-6@2x.webp 2x">
-                <img class="gallery__img" src="img/content/gallery/gallery-small-6@1x.jpg" srcset="img/content/gallery/gallery-small-6@2x.jpg" width="158" height="130" alt="">
-              </picture>
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__link" href="img/content/gallery/gallery-large-7.jpg" target="_blank" rel="noopener noreferrer">
-              <picture>
-                <source width="380" height="250" type="image/webp"
-                  srcset="img/content/gallery/gallery-small-7@1x.webp 1x, img/content/gallery/gallery-small-7@2x.webp 2x">
-                <img class="gallery__img" src="img/content/gallery/gallery-small-7@1x.jpg" srcset="img/content/gallery/gallery-small-7@2x.jpg" width="158" height="266" alt="">
-              </picture>
-            </a>
-          </li>
-        </ul>
+        <div class="gallery__swiper">
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <a class="gallery__link" href="img/content/gallery/gallery-large-1.jpg" target="_blank" rel="noopener noreferrer">
+                <picture>
+                  <source width="380" height="250" type="image/webp"
+                    srcset="img/content/gallery/gallery-small-1@1x.webp 1x, img/content/gallery/gallery-small-1@2x.webp 2x">
+                  <img class="gallery__img" src="img/content/gallery/gallery-small-1@1x.jpg" srcset="img/content/gallery/gallery-small-1@2x.jpg" width="158" height="266" alt="">
+                </picture>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="img/content/gallery/gallery-large-2.jpg" target="_blank" rel="noopener noreferrer">
+                <picture>
+                  <source width="380" height="250" type="image/webp"
+                    srcset="img/content/gallery/gallery-small-2@1x.webp 1x, img/content/gallery/gallery-small-2@2x.webp 2x">
+                  <img class="gallery__img" src="img/content/gallery/gallery-small-2@1x.jpg" srcset="img/content/gallery/gallery-small-2@2x.jpg" width="158" height="130" alt="">
+                </picture>
+              </a>
+              <a class="gallery__link" href="img/content/gallery/gallery-large-3.jpg" target="_blank" rel="noopener noreferrer">
+                <picture>
+                  <source width="380" height="250" type="image/webp"
+                    srcset="img/content/gallery/gallery-small-3@1x.webp 1x, img/content/gallery/gallery-small-3@2x.webp 2x">
+                  <img class="gallery__img" src="img/content/gallery/gallery-small-3@1x.jpg" srcset="img/content/gallery/gallery-small-3@2x.jpg" width="158" height="130" alt="">
+                </picture>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="img/content/gallery/gallery-large-4.jpg" target="_blank" rel="noopener noreferrer">
+                <picture>
+                  <source width="380" height="250" type="image/webp"
+                    srcset="img/content/gallery/gallery-small-4@1x.webp 1x, img/content/gallery/gallery-small-4@2x.webp 2x">
+                  <img class="gallery__img" src="img/content/gallery/gallery-small-4@1x.jpg" srcset="img/content/gallery/gallery-small-4@2x.jpg" width="158" height="266" alt="">
+                </picture>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="img/content/gallery/gallery-large-5.jpg" target="_blank" rel="noopener noreferrer">
+                <picture>
+                  <source width="380" height="250" type="image/webp"
+                    srcset="img/content/gallery/gallery-small-5@1x.webp 1x, img/content/gallery/gallery-small-5@2x.webp 2x">
+                  <img class="gallery__img" src="img/content/gallery/gallery-small-5@1x.jpg" srcset="img/content/gallery/gallery-small-5@2x.jpg" width="158" height="130" alt="">
+                </picture>
+              </a>
+              <a class="gallery__link" href="img/content/gallery/gallery-large-6.jpg" target="_blank" rel="noopener noreferrer">
+                <picture>
+                  <source width="380" height="250" type="image/webp"
+                    srcset="img/content/gallery/gallery-small-6@1x.webp 1x, img/content/gallery/gallery-small-6@2x.webp 2x">
+                  <img class="gallery__img" src="img/content/gallery/gallery-small-6@1x.jpg" srcset="img/content/gallery/gallery-small-6@2x.jpg" width="158" height="130" alt="">
+                </picture>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="img/content/gallery/gallery-large-7.jpg" target="_blank" rel="noopener noreferrer">
+                <picture>
+                  <source width="380" height="250" type="image/webp"
+                    srcset="img/content/gallery/gallery-small-7@1x.webp 1x, img/content/gallery/gallery-small-7@2x.webp 2x">
+                  <img class="gallery__img" src="img/content/gallery/gallery-small-7@1x.jpg" srcset="img/content/gallery/gallery-small-7@2x.jpg" width="158" height="266" alt="">
+                </picture>
+              </a>
+            </li>
+          </ul>
+          <div class="gallery__navigation">
+            <button class="gallery__button gallery__button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+              <svg class="navigation__arrow" width="13" height="7">
+                <use href="/__spritemap#sprite-arrow-prev"></use>
+              </svg>
+            </button>
+            <button class="gallery__button gallery__button--next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+              <svg c width="13" height="7">
+                <use href="/__spritemap#sprite-arrow-next"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section callback" id="callback">
