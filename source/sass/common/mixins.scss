@@ -268,15 +268,54 @@
 
   @media (min-width: $tablet) {
     &::before {
+      top: 6px;
+
       font-size: 40px;
       line-height: 40px;
     }
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     &::before {
+      top: -6px;
+
       font-size: 55px;
       line-height: 55px;
     }
+  }
+}
+
+@mixin social-link {
+  @include link-reset;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid rgba(45, 56, 63, 0.3);
+
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &:hover {
+    border: 1px solid #2D383F;
+  }
+
+  &:focus-visible {
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: #0266C1;
+    border: 1px solid #0266C1;
+  }
+
+  &:not([href]) {
+    color: #999999;
+    border: 1px solid #999999;
+    pointer-events: none;
   }
 }

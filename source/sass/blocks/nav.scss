@@ -97,6 +97,15 @@
     color: #1C3374;
     box-shadow: none;
   }
+
+  &:not([href]) {
+    color: #999999;
+  }
+}
+
+.nav__list--footer .nav__link:active {
+  color: #0266C1;
+
 }
 
 .nav__list--shown .nav__link {
@@ -120,10 +129,6 @@
   }
 }
 
-.nav__logo path d {
-  color: #fff;
-}
-
 .nav__tel {
   @include link-reset;
 
@@ -133,10 +138,6 @@
   text-align: right;
 
   transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
-
-  &:active {
-    color: #1C3374;
-  }
 
   &:not([href]) {
     color: $disabled-color;
@@ -167,6 +168,10 @@
       outline: none;
     }
 
+    &:active {
+      color: #1C3374;
+    }
+
     @media (min-width: $tablet) {
       width: auto;
     }
@@ -182,6 +187,10 @@
     &:focus-visible {
       color: #0266C1;
       outline: none;
+    }
+
+    &:active {
+      color: #1C3374;
     }
 
     @media (min-width: $desktop) {

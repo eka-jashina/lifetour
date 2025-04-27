@@ -1,13 +1,15 @@
 .advantage {
   box-sizing: border-box;
   position: relative;
-  padding: 82px 10px 20px;
+  padding: 81px 9px 20px;
+
+  background-color: #ffffff;
   border: 1px solid rgba(2, 102, 193, 0.1);
 
   &::before {
     content: "";
     position: absolute;
-    top: 20px;
+    top: 19px;
     left: 50%;
 
     width: 42px;
@@ -16,8 +18,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px 24px;
-    border: 1px solid rgba(2, 102, 193, 0.1);
-
+    border: 1px solid #0266C1;
     transform: translateX(-50%);
   }
 
@@ -61,7 +62,7 @@
     padding: 103px 20px 30px;
 
     &::before {
-      top: 30px;
+      top: 29px;
 
       width: 48px;
       height: 48px;
@@ -69,7 +70,8 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 124px 20px 40px;
+    padding: 124px 18px 40px;
+    min-height: 331px;
 
     &::before {
       top: 40px;
@@ -89,8 +91,8 @@
 }
 
 .advantage h3 {
-  margin: 0;
-  margin-bottom: 15px;
+  margin: 0 auto 15px auto;
+  width: 223px;
 
   font-size: 14px;
   line-height: 14px;
@@ -98,11 +100,17 @@
   text-align: center;
 
   @media (min-width: $tablet) {
+    width: 255px;
+    margin-bottom: 14px;
+
     font-size: 16px;
     line-height: 16px;
   }
 
   @media (min-width: $desktop) {
+    width: 100%;
+    margin-bottom: 15px;
+
     font-size: 18px;
     line-height: 18px;
   }

@@ -30,17 +30,10 @@
 }
 
 .instructor__social {
-  @include link-reset;
+  @include social-link;
 
   width: 24px;
   height: 24px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 16px 8px;
-  background-image: url("/__spritemap#sprite-vk-view");
-
-  border: 1px solid rgba(45, 56, 63, 0.3)
 }
 
 .instructor h3 {

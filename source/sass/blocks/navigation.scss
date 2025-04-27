@@ -21,32 +21,44 @@
   height: 35px;
 
   background-color: #0266C1;
+  border: 1px solid #0266C1;
+
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
 
   &:hover {
     background-color: #ffffff;
-    outline: 1px solid #1C3374;
+    border: 1px solid #1C3374
   }
 
   &:focus-visible {
     background-color: #ffffff;
     outline: none;
+    border: none;
   }
 
   &:active {
     background-color: #1C3374;
+    border: 1px solid #1C3374;
   }
 
   &:disabled {
     background-color: #999999;
+    border: 1px solid #999999;
     pointer-events: none;
   }
 }
 
-.navigation__button:hover svg path,
-.navigation__button:focus-visible svg path{
-  fill: #1C3374;
+.navigation__arrow {
+  color: #ffffff;
+
+  transition: color 0.3s ease-in-out;
 }
 
-.navigation__button:active svg path {
-  fill: #ffffff;
+.navigation__button:hover .navigation__arrow,
+.navigation__button:focus-visible .navigation__arrow {
+  color: #1C3374;
+}
+
+.navigation__button:active .navigation__arrow {
+  color: #ffffff;
 }

@@ -1,4 +1,4 @@
-.background-wrapper {
+.background-wrapper--1 {
   background-repeat: no-repeat;
   background-position: top 10px right;
   background-size: 141px 595px;
@@ -44,6 +44,34 @@
       url("../../img/decor/clouds/clouds-2-desktop@2x.webp") type("image/webp") 2x,
       url("../../img/decor/clouds/clouds-2-desktop@1x.png") type("image/png") 1x,
       url("../../img/decor/clouds/clouds-2-desktop@2x.png") type("image/png") 2x
+    );
+  }
+}
+
+.background-wrapper--2 {
+  @media (min-width: $tablet) {
+    background-repeat: no-repeat;
+    background-position: top 603px center;
+    background-size: 768px 996px;
+    background-image:
+    image-set(
+      url("../../img/decor/clouds/clouds-3-tablet@1x.webp") type("image/webp") 1x,
+      url("../../img/decor/clouds/clouds-3-tablet@2x.webp") type("image/webp") 2x,
+      url("../../img/decor/clouds/clouds-3-tablet@1x.png") type("image/png") 1x,
+      url("../../img/decor/clouds/clouds-3-tablet@2x.png") type("image/png") 2x
+    );
+  }
+
+  @media (min-width: $tablet) {
+    background-repeat: no-repeat;
+    background-position: top 317px center;
+    background-size: 1440px 447px;
+    background-image:
+    image-set(
+      url("../../img/decor/clouds/clouds-3-desktop@1x.webp") type("image/webp") 1x,
+      url("../../img/decor/clouds/clouds-3-desktop@2x.webp") type("image/webp") 2x,
+      url("../../img/decor/clouds/clouds-3-desktop@1x.png") type("image/png") 1x,
+      url("../../img/decor/clouds/clouds-3-desktop@2x.png") type("image/png") 2x
     );
   }
 }

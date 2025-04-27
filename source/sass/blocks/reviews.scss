@@ -1,6 +1,30 @@
+.reviews {
+  padding-top: 18px;
+
+  @media (min-width: $tablet) {
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 122px;
+  }
+}
+
 .reviews__container {
   @media (min-width: $tablet) {
     padding-right: 0;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 28px;
   }
 }
 
@@ -27,7 +51,12 @@
 }
 
 .reviews__navigation {
+  @media (min-width: $tablet) {
+    right: 45px;
+  }
+
   @media (min-width: $desktop) {
+    top: 23px;
     right: 120px;
   }
 }
