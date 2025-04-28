@@ -20,6 +20,7 @@ function initGallerySwiper() {
 
     gallerySwiper = new Swiper('.gallery__swiper', {
       modules: [Navigation],
+      loop: true,
       speed: 1000,
       mousewheel: false,
       simulateTouch: false,

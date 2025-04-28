@@ -23,6 +23,7 @@ import { initInstructorsSwiper } from './modules/instructors-swiper.js';
 import { initReviewsSwiper } from './modules/reviews-swiper.js';
 import { initAdvantagesSwiper, debouncedResizeAdvantagesSwiper } from'./modules/advantages-swiper.js';
 import { initGallerySwiper, debouncedResizeGallerySwiper } from './modules/gallery-swiper.js';
+import './modules/form-validation.js';
 
 initHeroSwiper();
 
@@ -37,3 +38,6 @@ window.addEventListener('resize', debouncedResizeAdvantagesSwiper);
 
 initGallerySwiper();
 window.addEventListener('resize', debouncedResizeGallerySwiper);
+
+
+

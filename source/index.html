@@ -696,7 +696,7 @@
           </button>
           <button class="gallery__button gallery__button--next navigation__button navigation__button--next" type="button">
             <span class="visually-hidden">Следующий слайд</span>
-            <svg c width="13" height="7">
+            <svg class="navigation__arrow" width="13" height="7">
               <use href="/__spritemap#sprite-arrow-next"></use>
             </svg>
           </button>
@@ -704,15 +704,20 @@
       </div>
     </section>
     <section class="section callback" id="callback" data-test="form">
-      <div class="container">
-        <h2>Остались вопросы?</h2>
+      <div class="container callback__container">
+        <h2 class="section__title visually-hidden">Форма обратной связи</h2>
+        <h3>Остались вопросы?</h3>
         <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
         <form class="callback__form" method="post" action="https://echo.htmlacademy.ru">
-          <label class="callback__label" for="tel">Телефон</label>
-          <input class="callback__input" id="tel" type="tel" name="phone" required>
-          <label class="callback__label" for="email">Email</label>
-          <input class="callback__input" id="email" type="email" name="email" required>
-          <button class="callback__submit" type="submit"></button>
+          <div class="callback__field">
+            <input class="callback__input" id="tel" type="tel" name="phone" placeholder="+7 (000)-000-00-00" required>
+            <label class="callback__label" for="tel">Телефон</label>
+          </div>
+          <div class="callback__field">
+            <input class="callback__input" id="email" type="text" name="email" placeholder="mail@mail.com" required>
+            <label class="callback__label" for="email">Email</label>
+          </div>
+          <button class="callback__submit" type="submit">Отправить</button>
         </form>
       </div>
     </section>
@@ -721,29 +726,35 @@
     <section class="section contacts" id="contacts">
       <div class="container">
         <div class="contacts__content">
-          <h2 class="section__title">Контакты</h2>
+          <h2 class="section__title section__title--decor" data-text="Контакты">Контакты</h2>
           <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
             увлекательными историями и подобрать для вас тур.</p>
           <dl class="contacts__list">
-            <div class="contacts__iten">
+            <div class="contacts__item contacts__item--tel">
               <dt class="contacts__name">Телефон</dt>
               <dd class="contacts__description">
                 <a class="contacts__link" href="tel:++79837454545">+7 983 745-45-45</a>
               </dd>
             </div>
-            <div class="contacts__iten">
+            <div class="contacts__item contacts__item--email">
               <dt class="contacts__name">Email</dt>
               <dd class="contacts__description">
                 <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
               </dd>
             </div>
-            <div class="contacts__iten">
+            <div class="contacts__item contacts__item--address">
               <dt class="contacts__name">Адрес</dt>
               <dd class="contacts__description">г. Москва, пр-т Мира, д. 14, офис 101</dd>
             </div>
           </dl>
         </div>
-        <img class="contacts__map" src="#" alt="">
+        <div class="contacts__map">
+          <picture>
+            <source width="600" height="324" type="image/svg+xml" media="(min-width: 1440px)" srcset="img/content/map/map-desktop.svg">
+            <source width="768" height="340" type="image/svg+xml" media="(min-width: 768px)" srcset="img/content/map/map-tablet.svg">
+            <img class="contacts__img" src="img/content/map/map-mobile.svg" width="320" height="343" alt="">
+          </picture>
+        </div>
       </div>
     </section>
     <section class="section footer">
