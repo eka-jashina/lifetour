@@ -7,7 +7,8 @@
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 0;
+    padding-top: 100px;
+    padding-bottom: 3px;
   }
 }
 
@@ -34,7 +35,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding-left: 121px;
+    padding-left: 120px;
     margin-bottom: 14px;
 
     &::before {
@@ -63,8 +64,8 @@
 
   @media (min-width: $desktop) {
     max-width: 720px;
-    padding-left: 121px;
-    margin-bottom: 46px;
+    padding-left: 120px;
+    margin-bottom: 45px;
 
     font-size: 16px;
     line-height: 24px;

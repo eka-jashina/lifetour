@@ -1,6 +1,8 @@
 .callback {
   position: relative;
-  
+
+  padding: 0;
+
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -51,6 +53,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 288px;
   min-height: 638px;
 
   color: #ffffff;
@@ -68,7 +71,8 @@
 
 .callback__container h3 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
+  padding-top: 2px;
 
   font-size: 22px;
   line-height: 22px;
@@ -76,15 +80,16 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    margin-bottom: 25px;
-    
+    margin-bottom: 20px;
+    padding-top: 5px;
+
     font-size: 25px;
     line-height: 25px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 20px;
-    
+    margin-bottom: 18px;
+
     font-size: 35px;
     line-height: 35px;
   }
@@ -93,6 +98,7 @@
 .callback__container p {
   margin: 0;
   margin-bottom: 10px;
+  width: 220px;
 
   font-size: 12px;
   line-height: 18px;
@@ -100,8 +106,14 @@
   text-align: center;
 
   @media (min-width: $tablet) {
+    width: 300px;
+
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
   }
 }
 
@@ -113,14 +125,20 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
 }
 
 .callback__form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   row-gap: 8px;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    row-gap: 10px;
+  }
 
   @media (min-width: $desktop) {
     flex-direction: row;
@@ -133,7 +151,8 @@
 }
 
 .callback__input {
-  padding: 17px 15px;
+  padding: 14.5px 15px;
+  width: 100%;
 
   font-family: inherit;
   font-size: 16px;
@@ -153,7 +172,11 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 20px 30px;
+    padding: 18px 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 360px;
   }
 }
 
@@ -191,4 +214,6 @@
 
 .callback__submit {
   @include button-style;
+
+  min-height: 57px;
 }

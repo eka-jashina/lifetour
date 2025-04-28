@@ -27,11 +27,6 @@ function initInstructorsSwiper() {
         spaceBetween: 20,
       },
     },
-
-    keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-    },
   });
 
   return instructorsSwiper;
