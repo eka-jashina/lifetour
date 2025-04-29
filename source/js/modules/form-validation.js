@@ -33,7 +33,7 @@ function validateEmail() {
   if (value === '') {
     emailInput.setCustomValidity("Пожалуйста, заполните это поле.");
   } else if (!emailRegex.test(value)) {
-    emailInput.setCustomValidity("Неверный формат email.");
+    emailInput.setCustomValidity("Некорректный формат email.");
   }
 
   if (!emailInput.checkValidity()) {
@@ -53,8 +53,6 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
     return;
   }
-
-  form.reset();
 });
 
 
