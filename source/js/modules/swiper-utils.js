@@ -1,5 +1,5 @@
 function destroySwiper({ swiperInstance, swiperContainer, wrapper, slides }) {
-  if (swiper) {
+  if (swiperInstance) {
     swiperInstance.destroy(true, true);
     swiperContainer.classList.remove('swiper', 'swiper-initialized');
     if (wrapper) wrapper.classList.remove('swiper-wrapper');

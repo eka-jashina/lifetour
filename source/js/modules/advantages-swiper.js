@@ -29,7 +29,7 @@ function initAdvantagesSwiper() {
       slidesPerGroup: 2,
       centeredSlides: true,
       spaceBetween: 30,
-      initialSlide: 4,
+      initialSlide: 2,
 
       navigation: {
         nextEl: '.advantages__button--next',

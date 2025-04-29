@@ -60,15 +60,71 @@
   }
 }
 
-.about__title {
+.about h2 {
+  @include h3-font;
+
+  position: relative;
+
+  margin: 0;
+  padding-top: 19px;
+  padding-bottom: 14px;
   margin-bottom: 28px;
 
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: fit-content;
+    height: auto;
+
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 800;
+    color: inherit;
+    opacity: 0.03;
+  }
+
   @media (min-width: $tablet) {
+    padding-top: 20px;
+    padding-bottom: 10px;
     margin-bottom: 38px;
+
+    font-size: 25px;
+    line-height: 25px;
+
+    &::before {
+      top: 6px;
+
+      font-size: 40px;
+      line-height: 40px;
+    }
   }
 
   @media (min-width: $desktop) {
+    padding-top: 23px;
+    padding-bottom: 10px;
     margin-bottom: 49px;
+
+    font-size: 35px;
+    line-height: 35px;
+
+    &::before {
+      top: -6px;
+
+      font-size: 55px;
+      line-height: 55px;
+    }
+  }
+
+  &--decor {
+    @include title-decor;
   }
 }
 

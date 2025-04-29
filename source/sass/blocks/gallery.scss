@@ -90,7 +90,7 @@
 .gallery .gallery__item {
   display: flex;
   flex-direction: column;
-  row-gap: 6px;
+  justify-content: space-between;
 }
 
 .gallery__navigation {
@@ -103,62 +103,6 @@
   }
 }
 
-.gallery__link {
-  @include link-reset;
-
-  overflow: hidden;
-}
-
 .gallery__img {
   display: block;
-  width: 157px;
-  height: 135px;
-  object-fit: cover;
-
-  @media (min-width: $tablet) {
-    width: 253px;
-    height: 211px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 284px;
-    height: 233px;
-  }
-
-  &--large {
-    height: 266px;
-
-    @media (min-width: $tablet) {
-      height: 418px;
-    }
-
-    @media (min-width: $desktop) {
-      height: 463px;
-    }
-  }
-
-  &--2n {
-    object-position: center -7px;
-    transform: scale(1.1);
-
-    @media (min-width: $tablet) {
-      object-position: center -10px;
-    }
-  }
-
-  &--3n {
-    height: 125px;
-    transform: scale(2);
-    object-position: center 26px;
-
-    @media (min-width: $tablet) {
-      height: 201px;
-      transform: scale(1.3);
-      object-position: center 12px;
-    }
-
-    @media (min-width: $desktop) {
-      height: 223.5px;
-    }
-  }
 }
