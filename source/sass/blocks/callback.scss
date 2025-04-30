@@ -185,7 +185,8 @@
   }
 }
 
-.callback__label {
+.callback__label,
+.error-message {
   position: absolute;
   top: 50%;
   left: 15px;

@@ -319,3 +319,22 @@
     pointer-events: none;
   }
 }
+
+@mixin link-effects {
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus-visible {
+    color: #0266C1;
+    outline: none;
+  }
+
+  &:active {
+    color: #1C3374;
+  }
+
+  &:not([href]) {
+    color: #999999;
+  }
+}

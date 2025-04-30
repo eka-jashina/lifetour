@@ -752,12 +752,14 @@
         <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
         <form class="callback__form" method="post" action="https://echo.htmlacademy.ru" novalidate>
           <div class="callback__field">
-            <input class="callback__input" id="tel" type="tel" name="phone" placeholder="+7 (000)-000-00-00" required>
+            <input class="callback__input" id="tel" type="tel" inputmode="tel" name="phone" placeholder="+7 (000)-000-00-00" re>
             <label class="callback__label" for="tel">Телефон</label>
+            <span class="error-message"></span>
           </div>
           <div class="callback__field">
-            <input class="callback__input" id="email" type="email" name="email" placeholder="mail@mail.com" required>
+            <input class="callback__input" id="email" type="text" inputmode="email" name="email" placeholder="mail@mail.com" required>
             <label class="callback__label" for="email">Email</label>
+            <span class="error-message"></span>
           </div>
           <button class="callback__submit" type="submit">Отправить</button>
         </form>
@@ -802,7 +804,7 @@
     <section class="section footer">
       <div class="container footer__container">
         <div class="footer__nav nav">
-          <img class="nav__logo nav__logo" width="142" height="42" src="img/content/logo-dark.svg" alt="Логотип компании Lifetour">
+          <img class="nav__logo nav__logo--footer" width="142" height="42" src="img/content/logo-dark.svg" alt="Логотип компании Lifetour">
           <ul class="nav__list nav__list--footer">
             <Li class="nav__item">
               <a class="nav__link" href="#tours">Туры</a>
@@ -851,7 +853,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer__juristic" href="#">Политика конфиденциальности</a>
+        <a class="footer__privacy" href="#">Политика конфиденциальности</a>
       </div>
     </section>
   </footer>

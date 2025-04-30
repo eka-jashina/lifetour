@@ -1,0 +1,35 @@
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+
+  @media (min-width: $tablet) {
+    gap: 34px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 22px;
+  }
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.footer__privacy {
+  @include link-reset;
+  @include link-effects;
+
+  margin: 0 auto;
+
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+}

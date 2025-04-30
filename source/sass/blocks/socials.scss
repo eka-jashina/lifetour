@@ -1,0 +1,12 @@
+.socials {
+  @include list-reset;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.socials__link {
+  @include social-link;
+}

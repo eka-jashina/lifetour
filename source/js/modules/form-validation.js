@@ -1,6 +1,6 @@
 const form = document.querySelector('.callback__form');
 const phoneInput = document.querySelector('.callback__input[type="tel"]');
-const emailInput = document.querySelector('.callback__input[type="email"]');
+const emailInput = document.querySelector('.callback__input[type="text"]');
 
 const phoneRegex = /^[\d\s()+-]+$/;
 const emailRegex = /^[A-Za-z\u0400-\u04FF0-9._%+-]+@[A-Za-z\u0400-\u04FF0-9.-]+\.[A-Za-z\u0400-\u04FF]{2,}$/;
@@ -46,14 +46,13 @@ function validateEmail() {
 }
 
 form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
   const isPhoneValid = validatePhone();
   const isEmailValid = validateEmail();
 
-  if (!isPhoneValid || !isEmailValid) {
-    event.preventDefault();
-    return;
+  if (isPhoneValid && isEmailValid) {
+    form.submit(); 
   }
 });
-
-
 
