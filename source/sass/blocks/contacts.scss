@@ -1,14 +1,54 @@
+.contacts {
+  padding-top: 18px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet) {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 100px;
+    padding-bottom: 94px;
+  }
+}
+
+.contacts__container {
+  @media (min-width: $tablet) {
+    padding-right: 43px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.contacts__title {
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 13px;
+  }
+}
+
 .contacts__content p {
   margin: 0;
   margin-bottom: 10px;
-  
+
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
 
   @media (min-width: $tablet) {
     max-width: 480px;
-    font-style: 16px;
+    font-size: 16px;
     line-height: 24px;
   }
 }
@@ -21,7 +61,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 50px;
+    margin-bottom: 49px;
   }
 }
 
@@ -38,6 +78,12 @@
     flex-direction: row;
     gap: 40px;
     margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    gap: 34px;
+    margin-bottom: 0;
   }
 }
 
@@ -69,24 +115,36 @@
     padding-left: 34px;
     background-size: 24px 24px;
   }
+
+  @media (min-width: $desktop) {
+    padding-left: 56px;
+    background-position: left center;
+  }
 }
 
 .contacts__name {
   margin-bottom: 8px;
-  
+
   font-size: 14px;
   line-height: 14px;
   font-weight: 600;
 
   @media (min-width: $tablet) {
-    margin-bottom: 6px;
-    
+    margin-bottom: 5px;
+
     font-size: 16px;
     line-height: 16px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 9px;
+
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
-.contacts__description {  
+.contacts__description {
   margin: 0;
 
   font-size: 14px;
@@ -94,13 +152,19 @@
   font-weight: 400;
 
   @media (min-width: $tablet) {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 .contacts__link {
   @include link-reset;
+  @include link-effects;
 }
 
 .contacts__map {
@@ -112,5 +176,7 @@
 
   @media (min-width: $desktop) {
     margin: 0;
+    padding-top: 5px;
+    padding-right: 77px;
   }
 }

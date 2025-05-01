@@ -321,8 +321,10 @@
 }
 
 @mixin link-effects {
+  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
+
   &:hover {
-    color: rgba(2, 102, 193, 0.1);
+    color: rgba(2, 102, 193, 0.5);
   }
 
   &:focus-visible {

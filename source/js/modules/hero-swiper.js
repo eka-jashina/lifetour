@@ -17,6 +17,12 @@ function initHeroSwiper() {
       bulletActiveClass: 'hero__bullet--active',
       clickable: true,
     },
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+
     on: {
       slideChange: function () {
         this.slides.forEach((slide, index) => {

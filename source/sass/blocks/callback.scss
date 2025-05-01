@@ -185,8 +185,7 @@
   }
 }
 
-.callback__label,
-.error-message {
+.callback__label {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -211,6 +210,7 @@
 .callback__input:focus + .callback__label,
 .callback__input:not(:placeholder-shown) + .callback__label {
   opacity: 0;
+  z-index: -1;
 }
 
 .callback__input:focus::placeholder,

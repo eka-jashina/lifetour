@@ -57,21 +57,26 @@
 .nav__list--footer {
   display: block;
   width: 100%;
-  margin-bottom: -15px;
+  margin-bottom: -9px;
   column-count: 2;
-  
+
   text-align: center;
 
   @media (min-width: $tablet) {
     display: flex;
     width: auto;
     margin-bottom: 0;
-    gap: 10px;
+    gap: 14px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 0;
+    gap: 20px;
   }
 }
 
 .nav__list--footer .nav__item {
-  margin-bottom: 15px;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
@@ -144,6 +149,20 @@
 }
 
 .nav__logo {
+  @include link-reset;
+
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.5;
+  }
+
+  &:active,
+  &:not([href]) {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet) {
     margin-left: 114px;
   }
@@ -154,6 +173,14 @@
 
   &--footer {
     margin-left: 0;
+
+    @media (min-width: $tablet) {
+      margin-left: 45px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: 149px;
+    }
   }
 }
 
@@ -223,6 +250,7 @@
 
     @media (min-width: $desktop) {
       display: block;
+      margin-left: 26px;
     }
   }
 }

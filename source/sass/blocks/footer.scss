@@ -1,25 +1,45 @@
+.footer {
+  padding-top: 23px;
+  border-top: 1px solid rgba(45, 56, 63, 0.2);
+
+  @media (min-width: $tablet) {
+    padding-top: 34px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 40px;
+  }
+}
+
 .footer__container {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 20px;
+  padding: 0;
 
   @media (min-width: $tablet) {
     gap: 34px;
   }
 
   @media (min-width: $desktop) {
-    gap: 22px;
+    gap: 31px;
   }
 }
 
 .footer__nav {
   display: flex;
   flex-direction: column;
-  row-gap: 22px;
+  row-gap: 20px;
 
   @media (min-width: $tablet) {
     flex-direction: row;
     align-items: center;
+    justify-content: start;
+    column-gap: 37px;
+  }
+
+  @media (min-width: $desktop) {
+    column-gap: 140px;
   }
 }
 
@@ -28,8 +48,17 @@
   @include link-effects;
 
   margin: 0 auto;
+  padding: 3px;
 
   font-size: 12px;
   line-height: 12px;
   font-weight: 300;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -9px;
+  }
 }

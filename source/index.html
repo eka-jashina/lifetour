@@ -15,7 +15,10 @@
         <button class="nav__burger">
           <span class="visually-hidden">Меню</span>
         </button>
-        <img class="nav__logo" width="142" height="42" src="img/content/logo-light.svg" alt="Логотип компании Lifetour">
+        <a class="nav__logo" href="index.html">
+          <span class="visually-hidden">Главная страница</span>
+          <img width="142" height="42" src="img/content/logo-light.svg" alt="Логотип компании Lifetour">
+        </a>
         <ul class="nav__list">
           <Li class="nav__item">
             <a class="nav__link" href="#tours">Туры</a>
@@ -767,10 +770,10 @@
     </section>
   </main>
   <footer data-test="footer">
-    <!-- <section class="section contacts" id="contacts">
-      <div class="container">
+    <section class="section contacts" id="contacts">
+      <div class="container contacts__container">
         <div class="contacts__content">
-          <h2 class="section__title section__title--decor" data-text="Контакты">Контакты</h2>
+          <h2 class="section__title section__title--decor contacts__title" data-text="Контакты">Контакты</h2>
           <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
             увлекательными историями и подобрать для вас тур.</p>
           <dl class="contacts__list">
@@ -800,11 +803,14 @@
           </picture>
         </div>
       </div>
-    </section> -->
+    </section>
     <section class="section footer">
       <div class="container footer__container">
         <div class="footer__nav nav">
-          <img class="nav__logo nav__logo--footer" width="142" height="42" src="img/content/logo-dark.svg" alt="Логотип компании Lifetour">
+          <a class="nav__logo nav__logo--footer" href="index.html">
+            <span class="visually-hidden">Главная страница</span>
+            <img width="142" height="42" src="img/content/logo-dark.svg" alt="Логотип компании Lifetour">
+          </a>
           <ul class="nav__list nav__list--footer">
             <Li class="nav__item">
               <a class="nav__link" href="#tours">Туры</a>

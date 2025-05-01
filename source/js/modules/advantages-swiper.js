@@ -35,6 +35,11 @@ function initAdvantagesSwiper() {
         nextEl: '.advantages__button--next',
         prevEl: '.advantages__button--prev',
       },
+
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+      },
     });
   } else if (window.innerWidth < breakpoint && advSwiper) {
     destroySwiper({
