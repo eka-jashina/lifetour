@@ -3,7 +3,7 @@ import {Navigation} from 'swiper/modules';
 import 'swiper/css';
 import { destroySwiper, debounce } from './swiper-utils.js';
 
-const advContainer = document.querySelector('.advantages__container');
+const advContainer = document.querySelector('.advantages__swiper');
 const advWrapper = document.querySelector('.advantages__list');
 const advSlides = document.querySelectorAll('.advantage');
 let advSwiper = null;
@@ -14,16 +14,14 @@ function initAdvantagesSwiper() {
   if (window.innerWidth >= breakpoint && !advSwiper) {
     advContainer.classList.add('swiper');
     advWrapper.classList.add('swiper-wrapper');
-    for (let slide of advSlides) {
+    for (const slide of advSlides) {
       slide.classList.add('swiper-slide');
     }
 
-    advSwiper = new Swiper('.advantages__container', {
+    advSwiper = new Swiper('.advantages__swiper', {
       modules: [Navigation],
       loop: true,
       speed: 1000,
-      mousewheel: false,
-      simulateTouch: false,
       autoHeight: true,
       slidesPerView: 'auto',
       slidesPerGroup: 2,

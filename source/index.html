@@ -4,15 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Организация походов в горы в сопровождении опытных инструкторов.">
   <title>Lifetour</title>
+  <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="sass/style.scss">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="body">
   <header class="header" data-test="header">
     <div class="container header__container">
       <nav class="header__nav nav">
-        <button class="nav__burger">
+        <button class="nav__burger" type="button">
           <span class="visually-hidden">Меню</span>
         </button>
         <a class="nav__logo" href="index.html">
@@ -20,24 +27,24 @@
           <img width="142" height="42" src="img/content/logo-light.svg" alt="Логотип компании Lifetour">
         </a>
         <ul class="nav__list">
-          <Li class="nav__item">
+          <li class="nav__item">
             <a class="nav__link" href="#tours">Туры</a>
-          </Li>
-          <Li class="nav__item">
+          </li>
+          <li class="nav__item">
             <a class="nav__link" href="#training">Обучение</a>
-          </Li>
-          <Li class="nav__item">
+          </li>
+          <li class="nav__item">
             <a class="nav__link" href="#about">О нас</a>
-          </Li>
-          <Li class="nav__item">
+          </li>
+          <li class="nav__item">
             <a class="nav__link" href="#reviews">Отзывы</a>
-          </Li>
-          <Li class="nav__item">
+          </li>
+          <li class="nav__item">
             <a class="nav__link" href="#gallery">Фотографии</a>
-          </Li>
-          <Li class="nav__item">
+          </li>
+          <li class="nav__item">
             <a class="nav__link" href="#contacts">Контакты</a>
-          </Li>
+          </li>
         </ul>
         <a class="nav__tel nav__tel--header" href="tel:+78000000000">8 800 000-00-00</a>
       </nav>
@@ -54,7 +61,7 @@
                 <h2>Захватывающие вершины Кавказа</h2>
                 <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы
                   Чегет.</p>
-                <button class="hero-slide__button">Смотреть тур</button>
+                <button class="hero-slide__button" type="button">Смотреть тур</button>
               </div>
               <div class="hero-slide__details">
                 <span class="hero-slide__duration">6 дней/5 ночей</span>
@@ -73,7 +80,7 @@
               <source width="768" height="1034" type="image/jpeg" media="(min-width: 768px)"
                 srcset="img/content/hero/hero-caucasus-tablet@1x.jpg 1x, img/content/hero/hero-caucasus-tablet@2x.jpg 2x">
               <img class="hero-slide__img" src="img/content/hero/hero-caucasus-mobile@1x.jpg" srcset="img/content/hero/hero-caucasus-mobile@2x.jpg" width="320"
-                height="568" alt="Тренажерный зал: большое светлое помещение с большим количеством тренажеров">
+                height="568" alt="Горный хребет Кавказа в тумане под ясным небом.">
             </picture>
           </div>
           <div class="hero__slide hero-slide hero-slide--with-photo swiper-slide">
@@ -82,7 +89,7 @@
                 <h2>Невероятная природа Камчатки</h2>
                 <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
                   уголков дикой природы в мире.</p>
-                <button class="hero-slide__button">Смотреть тур</button>
+                <button class="hero-slide__button" type="button">Смотреть тур</button>
                 <picture>
                   <source width="410" height="459" type="image/webp" media="(min-width: 1440px)"
                     srcset="img/content/hero/hero-kamchatka-photo-cards-desktop@1x.webp 1x, img/content/hero/hero-kamchatka-photo-cards-desktop@2x.webp 2x">
@@ -91,7 +98,7 @@
                   <source width="410" height="459" type="image/jpeg" media="(min-width: 1440px)"
                     srcset="img/content/hero/hero-kamchatka-photo-cards-desktop@1x.jpg 1x, img/content/hero/hero-kamchatka-photo-cards-desktop@2x.jpg 2x">
                   <img class="hero-slide__photo-cards" src="img/content/hero/hero-kamchatka-photo-cards-tablet@1x.jpg" srcset="img/content/hero/hero-kamchatka-photo-cards-tablet@2x.jpg" width="442"
-                    height="365" alt="">
+                    height="365" alt="Полароидные снимки из похода: горное озеро и турист с трекинговыми палками на фоне гор.">
                 </picture>
               </div>
               <div class="hero-slide__details">
@@ -111,7 +118,7 @@
               <source width="768" height="1034" type="image/jpeg" media="(min-width: 768px)"
                 srcset="img/content/hero/hero-kamchatka-tablet@1x.jpg 1x, img/content/hero/hero-kamchatka-tablet@2x.jpg 2x">
               <img class="hero-slide__img" src="img/content/hero/hero-kamchatka-mobile@1x.jpg" srcset="img/content/hero/hero-kamchatka-mobile@2x.jpg" width="320"
-                height="568" alt="">
+                height="568" alt="Вылканы Камчатки под облачным небом.">
             </picture>
           </div>
           <div class="hero__slide hero-slide swiper-slide">
@@ -120,7 +127,7 @@
                 <h2>Магические пейзажи Алтайского Края</h2>
                 <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих
                   дух ландшафтов Алтайских гор.</p>
-                <button class="hero-slide__button">Смотреть тур</button>
+                <button class="hero-slide__button" type="button">Смотреть тур</button>
               </div>
               <div class="hero-slide__details">
                 <span class="hero-slide__duration">8 дней/7 ночей</span>
@@ -139,7 +146,7 @@
               <source width="768" height="1034" type="image/jpeg" media="(min-width: 768px)"
                 srcset="img/content/hero/hero-altai-tablet@1x.jpg 1x, img/content/hero/hero-altai-tablet@2x.jpg 2x">
               <img class="hero-slide__img" src="img/content/hero/hero-altai-mobile@1x.jpg" srcset="img/content/hero/hero-altai-mobile@2x.jpg" width="320"
-                height="568" alt="Тренажерный зал: большое светлое помещение с большим количеством тренажеров">
+                height="568" alt="Извилистая река среди осенних гор в Алтайском крае.">
             </picture>
           </div>
         </div>
@@ -149,8 +156,8 @@
     <div class="background-wrapper background-wrapper--1">
       <section class="section tours" id="tours" data-test="tours">
         <div class="container tours__container">
+          <h2 class="section__title section__title--decor" data-text="Ближайшие туры">Ближайшие туры</h2>
           <div class="tours__swiper">
-            <h2 class="section__title section__title--decor" data-text="Ближайшие туры">Ближайшие туры</h2>
             <ul class="tours__list swiper-wrapper">
               <li class="tours__item tour swiper-slide">
                 <div class="tour__content">
@@ -182,7 +189,7 @@
               <picture>
                 <source width="380" height="416" type="image/webp"
                   srcset="img/content/tours/tours-elbrus@1x.webp 1x, img/content/tours/tours-elbrus@2x.webp 2x">
-                <img class="tour__img" src="img/content/tours/tours-elbrus@1x.jpg" srcset="img/content/tours/tours-elbrus@2x.jpg" width="380" height="416" alt="">
+                <img class="tour__img" src="img/content/tours/tours-elbrus@1x.jpg" srcset="img/content/tours/tours-elbrus@2x.jpg" width="380" height="416" alt="Горы в облаках и зелёная долина — маршрут вокруг Эльбруса.">
               </picture>
               </li>
               <li class="tours__item tour swiper-slide">
@@ -215,7 +222,7 @@
                 <picture>
                   <source width="380" height="416" type="image/webp"
                     srcset="img/content/tours/tours-beluha@1x.webp 1x, img/content/tours/tours-beluha@2x.webp 2x">
-                  <img class="tour__img" src="img/content/tours/tours-beluha@1x.jpg" srcset="img/content/tours/tours-beluha@2x.jpg" width="380" height="416" alt="">
+                  <img class="tour__img" src="img/content/tours/tours-beluha@1x.jpg" srcset="img/content/tours/tours-beluha@2x.jpg" width="380" height="416" alt="Снежные вершины и голубое небо у подножия Белухи.">
                 </picture>
               </li>
               <li class="tours__item tour swiper-slide">
@@ -248,7 +255,7 @@
                 <picture>
                   <source width="380" height="416" type="image/webp"
                     srcset="img/content/tours/tours-fisht@1x.webp 1x, img/content/tours/tours-fisht@2x.webp 2x">
-                  <img class="tour__img" src="img/content/tours/tours-fisht@1x.jpg" srcset="img/content/tours/tours-fisht@2x.jpg" width="380" height="416" alt="">
+                  <img class="tour__img" src="img/content/tours/tours-fisht@1x.jpg" srcset="img/content/tours/tours-fisht@2x.jpg" width="380" height="416" alt="Скалистые горы и облачное небо.">
                 </picture>
               </li>
               <li class="tours__item tour swiper-slide">
@@ -281,24 +288,24 @@
                 <picture>
                   <source width="380" height="416" type="image/webp"
                     srcset="img/content/tours/tours-manarag@1x.webp 1x, img/content/tours/tours-manarag@2x.webp 2x">
-                  <img class="tour__img" src="img/content/tours/tours-manarag@1x.jpg" srcset="img/content/tours/tours-manarag@2x.jpg" width="380" height="416" alt="">
+                  <img class="tour__img" src="img/content/tours/tours-manarag@1x.jpg" srcset="img/content/tours/tours-manarag@2x.jpg" width="380" height="416" alt="Остроконечная вершина на фоне ясного неба.">
                 </picture>
               </li>
             </ul>
-            <div class="tours__navigation navigation">
-              <button class="tours__button tours__button--prev navigation__button navigation__button--prev" type="button">
-                <span class="visually-hidden">Предыдущий слайд</span>
-                <svg class="navigation__arrow" width="13" height="7">
-                  <use href="/__spritemap#sprite-arrow-prev"></use>
-                </svg>
-              </button>
-              <button class="tours__button tours__button--next navigation__button navigation__button--next" type="button">
-                <span class="visually-hidden">Следующий слайд</span>
-                <svg class="navigation__arrow" width="13" height="7">
-                  <use href="/__spritemap#sprite-arrow-next"></use>
-                </svg>
-              </button>
-            </div>
+          </div>
+          <div class="tours__navigation navigation">
+            <button class="tours__button tours__button--prev navigation__button navigation__button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+              <svg class="navigation__arrow" width="13" height="7">
+                <use href="/__spritemap#sprite-arrow-prev"></use>
+              </svg>
+            </button>
+            <button class="tours__button tours__button--next navigation__button navigation__button--next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+              <svg class="navigation__arrow" width="13" height="7">
+                <use href="/__spritemap#sprite-arrow-next"></use>
+              </svg>
+            </button>
           </div>
           <a class="tours__more" href="#">
             <span>Показать все туры</span>
@@ -314,14 +321,14 @@
           <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа,
             Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
           <section class="section instructors">
+            <h2 class="section__title instructors__title">Наши инструкторы</h2>
             <div class="instructors__swiper">
-              <h2 class="section__title instructors__title">Наши инструкторы</h2>
               <ul class="instructors__list swiper-wrapper">
                 <li class="instructors__item instructor swiper-slide">
                   <picture>
                     <source width="260" height="200" type="image/webp"
                       srcset="img/content/instructors/instructors-prokofiev@1x.webp 1x, img/content/instructors/instructors-prokofiev@2x.webp 2x">
-                    <img class="instructor__img" src="img/content/instructors/instructors-prokofiev@1x.jpg" srcset="img/content/instructors/instructors-prokofiev@2x.jpg" width="260" height="200" alt="">
+                    <img class="instructor__img" src="img/content/instructors/instructors-prokofiev@1x.jpg" srcset="img/content/instructors/instructors-prokofiev@2x.jpg" width="260" height="200" alt="Инструктор Александр Прокофьев с альпинистским рюкзаком на фоне скал.">
                   </picture>
                   <div class="instructor__head">
                     <h3>Александр Прокофьев</h3>
@@ -338,7 +345,7 @@
                   <picture>
                     <source width="260" height="200" type="image/webp"
                       srcset="img/content/instructors/instructors-afinogenova@1x.webp 1x, img/content/instructors/instructors-afinogenova@2x.webp 2x">
-                    <img class="instructor__img" src="img/content/instructors/instructors-afinogenova@1x.jpg" srcset="img/content/instructors/instructors-afinogenova@2x.jpg" width="260" height="200" alt="">
+                    <img class="instructor__img" src="img/content/instructors/instructors-afinogenova@1x.jpg" srcset="img/content/instructors/instructors-afinogenova@2x.jpg" width="260" height="200" alt="Светлана Афиногенова в походной одежде улыбается на фоне гор.">
                   </picture>
                   <div class="instructor__head">
                     <h3>Светлана Афиногенова</h3>
@@ -355,7 +362,7 @@
                   <picture>
                     <source width="260" height="200" type="image/webp"
                       srcset="img/content/instructors/instructors-kolesnichenko@1x.webp 1x, img/content/instructors/instructors-kolesnichenko@2x.webp 2x">
-                    <img class="instructor__img" src="img/content/instructors/instructors-kolesnichenko@1x.jpg" srcset="img/content/instructors/instructors-kolesnichenko@2x.jpg" width="260" height="200" alt="">
+                    <img class="instructor__img" src="img/content/instructors/instructors-kolesnichenko@1x.jpg" srcset="img/content/instructors/instructors-kolesnichenko@2x.jpg" width="260" height="200" alt="Надежда Колесниченко на фоне горного пейзажа в чёрной куртке.">
                   </picture>
                   <div class="instructor__head">
                     <h3>Надежда Колесниченко</h3>
@@ -373,7 +380,7 @@
                   <picture>
                     <source width="260" height="200" type="image/webp"
                       srcset="img/content/instructors/instructors-kaygorodov@1x.webp 1x, img/content/instructors/instructors-kaygorodov@2x.webp 2x">
-                    <img class="instructor__img" src="img/content/instructors/instructors-kaygorodov@1x.jpg" srcset="img/content/instructors/instructors-kaygorodov@2x.jpg" width="260" height="200" alt="">
+                    <img class="instructor__img" src="img/content/instructors/instructors-kaygorodov@1x.jpg" srcset="img/content/instructors/instructors-kaygorodov@2x.jpg" width="260" height="200" alt="Фёдор Кайгородов с рюкзаком и треккинговыми палками в горах.">
                   </picture>
                   <div class="instructor__head">
                     <h3>Федор Кайгородов</h3>
@@ -391,7 +398,7 @@
                   <picture>
                     <source width="260" height="200" type="image/webp"
                       srcset="img/content/instructors/instructors-vasnetsov@1x.webp 1x, img/content/instructors/instructors-vasnetsov@2x.webp 2x">
-                    <img class="instructor__img" src="img/content/instructors/instructors-vasnetsov@1x.jpg" srcset="img/content/instructors/instructors-vasnetsov@2x.jpg" width="260" height="200" alt="">
+                    <img class="instructor__img" src="img/content/instructors/instructors-vasnetsov@1x.jpg" srcset="img/content/instructors/instructors-vasnetsov@2x.jpg" width="260" height="200" alt="Инструктор Даниэль Васнецов на фоне заснеженных гор и хвойных деревьев.">
                   </picture>
                   <div class="instructor__head">
                     <h3>Даниэль Васнецов</h3>
@@ -405,20 +412,20 @@
                   <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
                 </li>
               </ul>
-              <div class="instructors__navigation navigation">
-                <button class="instructors__button instructors__button--prev navigation__button navigation__button--prev" type="button">
-                  <span class="visually-hidden">Предыдущий слайд</span>
-                  <svg class="navigation__arrow" width="13" height="7">
-                    <use href="/__spritemap#sprite-arrow-prev"></use>
-                  </svg>
-                </button>
-                <button class="instructors__button instructors__button--next navigation__button navigation__button--next" type="button">
-                  <span class="visually-hidden">Следующий слайд</span>
-                  <svg class="navigation__arrow" width="13" height="7">
-                    <use href="/__spritemap#sprite-arrow-next"></use>
-                  </svg>
-                </button>
-              </div>
+            </div>
+            <div class="instructors__navigation navigation">
+              <button class="instructors__button instructors__button--prev navigation__button navigation__button--prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
+                <svg class="navigation__arrow" width="13" height="7">
+                  <use href="/__spritemap#sprite-arrow-prev"></use>
+                </svg>
+              </button>
+              <button class="instructors__button instructors__button--next navigation__button navigation__button--next" type="button">
+                <span class="visually-hidden">Следующий слайд</span>
+                <svg class="navigation__arrow" width="13" height="7">
+                  <use href="/__spritemap#sprite-arrow-next"></use>
+                </svg>
+              </button>
             </div>
           </section>
           <section class="section training-steps">
@@ -459,14 +466,14 @@
     <div class="background-wrapper background-wrapper--2">
       <section class="section reviews" id="reviews" data-test="reviews">
         <div class="container reviews__container">
+          <h2 class="section__title section__title--decor reviews__title" data-text="Отзывы">Отзывы</h2>
           <div class="reviews__swiper">
-            <h2 class="section__title section__title--decor reviews__title" data-text="Отзывы">Отзывы</h2>
             <ul class="reviews__list swiper-wrapper">
               <li class="reviews__item review swiper-slide">
                 <picture class="review__picture">
-                  <source width="260" height="200" type="image/webp"
+                  <source width="258" height="263" type="image/webp"
                     srcset="img/content/reviews/reviews-frolov@1x.webp 1x, img/content/reviews/reviews-frolov@2x.webp 2x">
-                  <img class="review__img" src="img/content/reviews/reviews-frolov@1x.jpg" srcset="img/content/reviews/reviews-frolov@2x.jpg" width="250" height="169" alt="">
+                  <img class="review__img" src="img/content/reviews/reviews-frolov@1x.jpg" srcset="img/content/reviews/reviews-frolov@2x.jpg" width="258" height="253" alt="Мужчина сидит на склоне с видом на заснеженные вершины.">
                 </picture>
                 <blockquote class="review__content">
                   <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты,
@@ -479,9 +486,9 @@
               </li>
               <li class="reviews__item review swiper-slide">
                 <picture class="review__picture">
-                  <source width="260" height="200" type="image/webp"
+                  <source width="258" height="263" type="image/webp"
                     srcset="img/content/reviews/reviews-soloviev@1x.webp 1x, img/content/reviews/reviews-soloviev@2x.webp 2x">
-                  <img class="review__img" src="img/content/reviews/reviews-soloviev@1x.jpg" srcset="img/content/reviews/reviews-soloviev@2x.jpg" width="250" height="169" alt="">
+                  <img class="review__img" src="img/content/reviews/reviews-soloviev@1x.jpg" srcset="img/content/reviews/reviews-soloviev@2x.jpg" width="258" height="253" alt="Человек стоит на краю обрыва над живописной долиной.">
                 </picture>
                 <blockquote class="review__content">
                   <p>Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли
@@ -495,29 +502,28 @@
               </li>
               <li class="reviews__item review swiper-slide">
                 <picture class="review__picture">
-                  <source width="260" height="200" type="image/webp"
+                  <source width="258" height="263" type="image/webp"
                     srcset="img/content/reviews/reviews-bazhenova@1x.webp 1x, img/content/reviews/reviews-bazhenova@2x.webp 2x">
-                  <img class="review__img" src="img/content/reviews/reviews-bazhenova@1x.jpg" srcset="img/content/reviews/reviews-bazhenova@2x.jpg" width="250" height="169" alt="">
+                  <img class="review__img" src="img/content/reviews/reviews-bazhenova@1x.jpg" srcset="img/content/reviews/reviews-bazhenova@2x.jpg" width="258" height="253" alt="Женщина в яркой куртке и повязке на голове улыбается на фоне гор.">
                 </picture>
                 <blockquote class="review__content">
                   <p>Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала
                     на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче,
-                    чем ожидала, видимо организм уже привык.
+                    чем ожидала, видимо организм уже привык.</p>
                   <p>Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.</p>
-                  </p>
                   <cite class="review__name">Евгения Баженова</cite>
                   <span class="review__details">23 года, Кострома</span>
                 </blockquote>
               </li>
               <li class="reviews__item review swiper-slide">
                 <picture class="review__picture">
-                  <source width="260" height="200" type="image/webp"
+                  <source width="258" height="263" type="image/webp"
                     srcset="img/content/reviews/reviews-pirogova@1x.webp 1x, img/content/reviews/reviews-pirogova@2x.webp 2x">
-                  <img class="review__img" src="img/content/reviews/reviews-pirogova@1x.jpg" srcset="img/content/reviews/reviews-pirogova@2x.jpg" width="250" height="169" alt="">
+                  <img class="review__img" src="img/content/reviews/reviews-pirogova@1x.jpg" srcset="img/content/reviews/reviews-pirogova@2x.jpg" width="258" height="253" alt="Девушка в фиолетовой куртке и солнцезащитных очках среди камней и гор.">
                 </picture>
                 <blockquote class="review__content">
                   <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда
-                    наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину. </p>
+                    наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину.</p>
                   <p>У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе
                     у костра и пели песни. Обязательно повторю такое приключение!</p>
                   <cite class="review__name">Елена Пирогова</cite>
@@ -525,86 +531,88 @@
                 </blockquote>
               </li>
             </ul>
-            <div class="reviews__navigation navigation">
-              <button class="reviews__button reviews__button--prev navigation__button navigation__button--prev" type="button">
-                <span class="visually-hidden">Предыдущий слайд</span>
-                <svg class="navigation__arrow" width="13" height="7">
-                  <use href="/__spritemap#sprite-arrow-prev"></use>
-                </svg>
-              </button>
-              <button class="reviews__button reviews__button--next navigation__button navigation__button--next" type="button">
-                <span class="visually-hidden">Следующий слайд</span>
-                <svg class="navigation__arrow" width="13" height="7">
-                  <use href="/__spritemap#sprite-arrow-next"></use>
-                </svg>
-              </button>
-            </div>
+          </div>
+          <div class="reviews__navigation navigation">
+            <button class="reviews__button reviews__button--prev navigation__button navigation__button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+              <svg class="navigation__arrow" width="13" height="7">
+                <use href="/__spritemap#sprite-arrow-prev"></use>
+              </svg>
+            </button>
+            <button class="reviews__button reviews__button--next navigation__button navigation__button--next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+              <svg class="navigation__arrow" width="13" height="7">
+                <use href="/__spritemap#sprite-arrow-next"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
       <section class="section advantages" id="advantages" data-test="adv">
         <div class="container advantages__container">
           <h2 class="section__title section__title--decor advantages__title" data-text="Преимущества">Преимущества</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item advantage advantage--1">
-              <h3>Безопасность</h3>
-              <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы
-                действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.
-              </p>
-            </li>
-            <li class="advantages__item advantage advantage--2">
-              <h3>Экспертиза и знания</h3>
-              <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности.
-                Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом
-                без опасений.</p>
-            </li>
-            <li class="advantages__item advantage advantage--3">
-              <h3>Оборудование и снаряжение</h3>
-              <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет
-                клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным
-                и экономически выгодным.</p>
-            </li>
-            <li class="advantages__item advantage advantage--4">
-              <h3>Индивидуальные маршруты</h3>
-              <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем
-                адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный
-                опыт.</p>
-            </li>
-            <li class="advantages__item advantage advantage--5">
-              <h3>Бережное отношение к природе</h3>
-              <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное
-                воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
-            </li>
-            <li class="advantages__item advantage advantage--1 advantage--duplicate" aria-hidden="true">
-              <h3>Безопасность</h3>
-              <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы
-                действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.
-              </p>
-            </li>
-            <li class="advantages__item advantage advantage--2 advantage--duplicate" aria-hidden="true">
-              <h3>Экспертиза и знания</h3>
-              <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности.
-                Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом
-                без опасений.</p>
-            </li>
-            <li class="advantages__item advantage advantage--3 advantage--duplicate" aria-hidden="true">
-              <h3>Оборудование и снаряжение</h3>
-              <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет
-                клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным
-                и экономически выгодным.</p>
-            </li>
-            <li class="advantages__item advantage advantage--4 advantage--duplicate" aria-hidden="true">
-              <h3>Индивидуальные маршруты</h3>
-              <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем
-                адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный
-                опыт.</p>
-            </li>
-            <li class="advantages__item advantage advantage--5 advantage--duplicate" aria-hidden="true">
-              <h3>Бережное отношение к природе</h3>
-              <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное
-                воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
-            </li>
-          </ul>
+          <div class="advantages__swiper">
+            <ul class="advantages__list">
+              <li class="advantages__item advantage advantage--1">
+                <h3>Безопасность</h3>
+                <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы
+                  действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.
+                </p>
+              </li>
+              <li class="advantages__item advantage advantage--2">
+                <h3>Экспертиза и знания</h3>
+                <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности.
+                  Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом
+                  без опасений.</p>
+              </li>
+              <li class="advantages__item advantage advantage--3">
+                <h3>Оборудование и снаряжение</h3>
+                <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет
+                  клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным
+                  и экономически выгодным.</p>
+              </li>
+              <li class="advantages__item advantage advantage--4">
+                <h3>Индивидуальные маршруты</h3>
+                <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем
+                  адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный
+                  опыт.</p>
+              </li>
+              <li class="advantages__item advantage advantage--5">
+                <h3>Бережное отношение к природе</h3>
+                <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное
+                  воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
+              </li>
+              <li class="advantages__item advantage advantage--1 advantage--duplicate" aria-hidden="true">
+                <h3>Безопасность</h3>
+                <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы
+                  действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.
+                </p>
+              </li>
+              <li class="advantages__item advantage advantage--2 advantage--duplicate" aria-hidden="true">
+                <h3>Экспертиза и знания</h3>
+                <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности.
+                  Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом
+                  без опасений.</p>
+              </li>
+              <li class="advantages__item advantage advantage--3 advantage--duplicate" aria-hidden="true">
+                <h3>Оборудование и снаряжение</h3>
+                <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет
+                  клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным
+                  и экономически выгодным.</p>
+              </li>
+              <li class="advantages__item advantage advantage--4 advantage--duplicate" aria-hidden="true">
+                <h3>Индивидуальные маршруты</h3>
+                <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем
+                  адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный
+                  опыт.</p>
+              </li>
+              <li class="advantages__item advantage advantage--5 advantage--duplicate" aria-hidden="true">
+                <h3>Бережное отношение к природе</h3>
+                <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное
+                  воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
+              </li>
+            </ul>
+          </div>
           <div class="advantages__navigation navigation">
             <button class="advantages__button advantages__button--prev navigation__button navigation__button-prev" type="button">
               <span class="visually-hidden">Предыдущий слайд</span>
@@ -641,7 +649,7 @@
                   srcset="img/content/gallery/gallery-1-desktop@1x.jpg 1x, img/content/gallery/gallery-1-desktop@2x.jpg 2x">
                 <source width="253" height="418" type="image/jpeg" media="(min-width: 768px)"
                   srcset="img/content/gallery/gallery-1-tablet@1x.jpg 1x, img/content/gallery/gallery-1-tablet@2x.jpg 2x">
-                <img class="gallery__img" src="img/content/gallery/gallery-1-mobile@1x.jpg" srcset="img/content/gallery/gallery-1-mobile@2x.jpg" width="158" height="266" alt="">
+                <img class="gallery__img" src="img/content/gallery/gallery-1-mobile@1x.jpg" srcset="img/content/gallery/gallery-1-mobile@2x.jpg" width="158" height="266" alt="Турист с рюкзаком стоит на краю утёса, любуясь горным пейзажем.">
               </picture>
             </li>
             <li class="gallery__item">
@@ -656,7 +664,7 @@
                   srcset="img/content/gallery/gallery-2-desktop@1x.jpg 1x, img/content/gallery/gallery-2-desktop@2x.jpg 2x">
                 <source width="252" height="215" type="image/jpeg" media="(min-width: 768px)"
                   srcset="img/content/gallery/gallery-2-tablet@1x.jpg 1x, img/content/gallery/gallery-2-tablet@2x.jpg 2x">
-                <img class="gallery__img" src="img/content/gallery/gallery-2-mobile@1x.jpg" srcset="img/content/gallery/gallery-2-mobile@2x.jpg" width="157" height="142" alt="">
+                <img class="gallery__img" src="img/content/gallery/gallery-2-mobile@1x.jpg" srcset="img/content/gallery/gallery-2-mobile@2x.jpg" width="157" height="142" alt="Группа людей у костра в горах.">
               </picture>
               <picture>
                 <source width="284" height="223" type="image/webp" media="(min-width: 1440px)"
@@ -669,7 +677,7 @@
                   srcset="img/content/gallery/gallery-3-desktop@1x.jpg 1x, img/content/gallery/gallery-3-desktop@2x.jpg 2x">
                 <source width="252" height="200" type="image/jpeg" media="(min-width: 768px)"
                   srcset="img/content/gallery/gallery-3-tablet@1x.jpg 1x, img/content/gallery/gallery-3-tablet@2x.jpg 2x">
-                <img class="gallery__img" src="img/content/gallery/gallery-3-mobile@1x.jpg" srcset="img/content/gallery/gallery-3-mobile@2x.jpg" width="157" height="125" alt="">
+                <img class="gallery__img" src="img/content/gallery/gallery-3-mobile@1x.jpg" srcset="img/content/gallery/gallery-3-mobile@2x.jpg" width="157" height="125" alt="Рука с компасом на фоне гор.">
               </picture>
             </li>
             <li class="gallery__item">
@@ -684,7 +692,7 @@
                   srcset="img/content/gallery/gallery-4-desktop@1x.jpg 1x, img/content/gallery/gallery-4-desktop@2x.jpg 2x">
                 <source width="253" height="418" type="image/jpeg" media="(min-width: 768px)"
                   srcset="img/content/gallery/gallery-4-tablet@1x.jpg 1x, img/content/gallery/gallery-4-tablet@2x.jpg 2x">
-                <img class="gallery__img" src="img/content/gallery/gallery-4-mobile@1x.jpg" srcset="img/content/gallery/gallery-4-mobile@2x.jpg" width="158" height="266" alt="">
+                <img class="gallery__img" src="img/content/gallery/gallery-4-mobile@1x.jpg" srcset="img/content/gallery/gallery-4-mobile@2x.jpg" width="158" height="266" alt="Потрясающий вид на вулкан и группу туристов, идущих по хребту.">
               </picture>
             </li>
             <li class="gallery__item">
@@ -699,7 +707,7 @@
                   srcset="img/content/gallery/gallery-5-desktop@1x.jpg 1x, img/content/gallery/gallery-5-desktop@2x.jpg 2x">
                 <source width="252" height="217" type="image/jpeg" media="(min-width: 768px)"
                   srcset="img/content/gallery/gallery-5-tablet@1x.jpg 1x, img/content/gallery/gallery-5-tablet@2x.jpg 2x">
-                <img class="gallery__img" src="img/content/gallery/gallery-5-mobile@1x.jpg" srcset="img/content/gallery/gallery-5-mobile@2x.jpg" width="157" height="142" alt="">
+                <img class="gallery__img" src="img/content/gallery/gallery-5-mobile@1x.jpg" srcset="img/content/gallery/gallery-5-mobile@2x.jpg" width="157" height="142" alt="Альпинисты на леднике, поднимающиеся вверх.">
               </picture>
               <picture>
                 <source width="284" height="223" type="image/webp" media="(min-width: 1440px)"
@@ -712,7 +720,7 @@
                   srcset="img/content/gallery/gallery-6-desktop@1x.jpg 1x, img/content/gallery/gallery-6-desktop@2x.jpg 2x">
                 <source width="252" height="202" type="image/jpeg" media="(min-width: 768px)"
                   srcset="img/content/gallery/gallery-6-tablet@1x.jpg 1x, img/content/gallery/gallery-6-tablet@2x.jpg 2x">
-                <img class="gallery__img" src="img/content/gallery/gallery-6-mobile@1x.jpg" srcset="img/content/gallery/gallery-6-mobile@2x.jpg" width="157" height="125" alt="">
+                <img class="gallery__img" src="img/content/gallery/gallery-6-mobile@1x.jpg" srcset="img/content/gallery/gallery-6-mobile@2x.jpg" width="157" height="125" alt="Палатка под звёздным небом.">
               </picture>
             </li>
             <li class="gallery__item">
@@ -727,7 +735,7 @@
                   srcset="img/content/gallery/gallery-7-desktop@1x.jpg 1x, img/content/gallery/gallery-7-desktop@2x.jpg 2x">
                 <source width="254" height="418" type="image/jpeg" media="(min-width: 768px)"
                   srcset="img/content/gallery/gallery-7-tablet@1x.jpg 1x, img/content/gallery/gallery-7-tablet@2x.jpg 2x">
-                <img class="gallery__img" src="img/content/gallery/gallery-7-mobile@1x.jpg" srcset="img/content/gallery/gallery-7-mobile@2x.jpg" width="158" height="266" alt="">
+                <img class="gallery__img" src="img/content/gallery/gallery-7-mobile@1x.jpg" srcset="img/content/gallery/gallery-7-mobile@2x.jpg" width="158" height="266" alt="Двое людей среди тумана у водоёма.">
               </picture>
             </li>
           </ul>
@@ -755,14 +763,12 @@
         <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
         <form class="callback__form" method="post" action="https://echo.htmlacademy.ru" novalidate>
           <div class="callback__field">
-            <input class="callback__input" id="tel" type="tel" inputmode="tel" name="phone" placeholder="+7 (000)-000-00-00" re>
+            <input class="callback__input" id="tel" type="tel" inputmode="tel" name="phone" placeholder="+7 (000)-000-00-00" required>
             <label class="callback__label" for="tel">Телефон</label>
-            <span class="error-message"></span>
           </div>
           <div class="callback__field">
             <input class="callback__input" id="email" type="text" inputmode="email" name="email" placeholder="mail@mail.com" required>
             <label class="callback__label" for="email">Email</label>
-            <span class="error-message"></span>
           </div>
           <button class="callback__submit" type="submit">Отправить</button>
         </form>
@@ -799,41 +805,42 @@
           <picture>
             <source width="600" height="324" type="image/svg+xml" media="(min-width: 1440px)" srcset="img/content/map/map-desktop.svg">
             <source width="768" height="340" type="image/svg+xml" media="(min-width: 768px)" srcset="img/content/map/map-tablet.svg">
-            <img class="contacts__img" src="img/content/map/map-mobile.svg" width="320" height="343" alt="">
+            <img class="contacts__img" src="img/content/map/map-mobile.svg" width="320" height="343" alt="Местоположение компании на карте.">
           </picture>
         </div>
       </div>
     </section>
     <section class="section footer">
       <div class="container footer__container">
+        <h2 class="visually-hidden">Навигация по сайту</h2>
         <div class="footer__nav nav">
           <a class="nav__logo nav__logo--footer" href="index.html">
             <span class="visually-hidden">Главная страница</span>
             <img width="142" height="42" src="img/content/logo-dark.svg" alt="Логотип компании Lifetour">
           </a>
           <ul class="nav__list nav__list--footer">
-            <Li class="nav__item">
+            <li class="nav__item">
               <a class="nav__link" href="#tours">Туры</a>
-            </Li>
-            <Li class="nav__item">
+            </li>
+            <li class="nav__item">
               <a class="nav__link" href="#training">Обучение</a>
-            </Li>
-            <Li class="nav__item">
+            </li>
+            <li class="nav__item">
               <a class="nav__link" href="#about">О нас</a>
-            </Li>
-            <Li class="nav__item">
+            </li>
+            <li class="nav__item">
               <a class="nav__link" href="#reviews">Отзывы</a>
-            </Li>
-            <Li class="nav__item">
+            </li>
+            <li class="nav__item">
               <a class="nav__link" href="#gallery">Фотографии</a>
-            </Li>
-            <Li class="nav__item">
+            </li>
+            <li class="nav__item">
               <a class="nav__link" href="#contacts">Контакты</a>
-            </Li>
+            </li>
           </ul>
           <a class="nav__tel nav__tel--footer" href="tel:+78007253232">8 800 725-32-32</a>
         </div>
-        <ul class="foter__socials socials">
+        <ul class="footer__socials socials">
           <li class="socials__item">
             <a class="socials__link" href="#">
               <span class="visually-hidden">Мы во ВКонтакте</span>

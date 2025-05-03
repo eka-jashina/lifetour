@@ -4,7 +4,7 @@
   @media (min-width: $tablet) {
     position: absolute;
     top: 20px;
-    right: 0;
+    right: 45px;
 
     display: flex;
     gap: 4px;
@@ -20,45 +20,46 @@
   width: 37px;
   height: 35px;
 
-  background-color: #0266C1;
-  border: 1px solid #0266C1;
+  background-color: $icon-secondary-color;
+  border: 1px solid $icon-secondary-color;
 
   transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
 
   &:hover {
-    background-color: #ffffff;
-    border: 1px solid #1C3374
+    background-color: $icon-light-color;
+    border: 1px solid $button-effects-color;
   }
 
   &:focus-visible {
-    background-color: #ffffff;
+    background-color: $icon-light-color;
     outline: none;
     border: none;
   }
 
   &:active {
-    background-color: #1C3374;
-    border: 1px solid #1C3374;
+    background-color: $button-effects-color;
+    border: 1px solid $button-effects-color;
   }
 
   &:disabled {
-    background-color: #999999;
-    border: 1px solid #999999;
+    background-color: $disabled-color;
+    border: 1px solid $disabled-color;
     pointer-events: none;
   }
 }
 
 .navigation__arrow {
-  color: #ffffff;
+  color: $text-light-color;
 
   transition: color 0.3s ease-in-out;
 }
 
 .navigation__button:hover .navigation__arrow,
 .navigation__button:focus-visible .navigation__arrow {
-  color: #1C3374;
+  color: $button-effects-color;
 }
 
-.navigation__button:active .navigation__arrow {
-  color: #ffffff;
+.navigation__button:active .navigation__arrow,
+.navigation__button:disabled .navigation__arrow {
+  color: $text-light-color;
 }

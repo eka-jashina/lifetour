@@ -12,18 +12,20 @@
 @mixin list-reset {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 @mixin link-reset {
   color: inherit;
   text-decoration: none;
+
   cursor: pointer;
 }
 
 // TYPOGRAPHY
 
-@mixin h1-font {
+@mixin main-title-font {
   font-size: 26px;
   line-height: 26px;
   font-weight: 800;
@@ -39,7 +41,7 @@
   }
 }
 
-@mixin h2-font {
+@mixin title-shadow-font {
   font-size: 26px;
   line-height: 26px;
   font-weight: 800;
@@ -55,7 +57,7 @@
   }
 }
 
-@mixin h3-font {
+@mixin section-title-font {
   font-size: 22px;
   line-height: 22px;
   font-weight: 800;
@@ -71,18 +73,7 @@
   }
 }
 
-@mixin h4-font {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-
-  @media (min-width: $tablet) {
-    font-size: 24px;
-    line-height: 28px;
-  }
-}
-
-@mixin h5-font {
+@mixin subtitle-font {
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -95,22 +86,6 @@
   @media (min-width: $desktop) {
     font-size: 21px;
     line-height: 21px;
-  }
-}
-
-@mixin h6-font {
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 600;
-
-  @media (min-width: $tablet) {
-    font-size: 16px;
-    line-height: 16px;
-  }
-
-  @media (min-width: $desktop) {
-    font-size: 18px;
-    line-height: 18px;
   }
 }
 
@@ -152,29 +127,6 @@
   }
 }
 
-@mixin caption-big-font {
-  font-size: 12px;
-  line-height: 12px;
-  font-weight: 700;
-
-  @media (min-width: $tablet) {
-    font-size: 13px;
-    line-height: 13px;
-  }
-}
-
-@mixin caption-regular-font {
-  font-size: 12px;
-  line-height: 12px;
-  font-weight: 500;
-}
-
-@mixin caption-small-font {
-  font-size: 12px;
-  line-height: 12px;
-  font-weight: 300;
-}
-
 @mixin button-font {
   font-family: inherit;
   font-size: 16px;
@@ -184,14 +136,9 @@
 
 @mixin input-font {
   font-family: inherit;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   font-weight: 400;
-
-  @media (min-width: $desktop) {
-    font-size: 16px;
-    line-height: 16px;
-  }
 }
 
 @mixin nav-font {
@@ -209,14 +156,12 @@
 
 @mixin button-style {
   @include button-reset;
+  @include button-font;
 
   padding: 5px;
   min-width: 180px;
   min-height: 56px;
 
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 500;
   color: $text-light-color;
 
   background-color: $button-bg-color;
@@ -250,6 +195,8 @@
   position: relative;
 
   &::before {
+    @include title-shadow-font;
+
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -259,9 +206,6 @@
     width: fit-content;
     height: auto;
 
-    font-size: 26px;
-    line-height: 26px;
-    font-weight: 800;
     color: inherit;
     opacity: 0.03;
   }
@@ -269,18 +213,12 @@
   @media (min-width: $tablet) {
     &::before {
       top: 6px;
-
-      font-size: 40px;
-      line-height: 40px;
     }
   }
 
   @media (min-width: $desktop) {
     &::before {
-      top: -6px;
-
-      font-size: 55px;
-      line-height: 55px;
+      top: 6px;
     }
   }
 }
@@ -299,7 +237,7 @@
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
   &:hover {
-    border: 1px solid #2D383F;
+    border: 1px solid $icon-primary-color;
   }
 
   &:focus-visible {
@@ -309,13 +247,13 @@
 
   &:active {
     color: #ffffff;
-    background-color: #0266C1;
-    border: 1px solid #0266C1;
+    background-color: $icon-secondary-color;
+    border: 1px solid $icon-secondary-color;
   }
 
   &:not([href]) {
-    color: #999999;
-    border: 1px solid #999999;
+    color: $disabled-color;
+    border: 1px solid $disabled-color;
     pointer-events: none;
   }
 }
@@ -328,15 +266,15 @@
   }
 
   &:focus-visible {
-    color: #0266C1;
+    color: $link-effects-color-primary;
     outline: none;
   }
 
   &:active {
-    color: #1C3374;
+    color: $link-effects-color-secondary;
   }
 
   &:not([href]) {
-    color: #999999;
+    color: $disabled-color;
   }
 }

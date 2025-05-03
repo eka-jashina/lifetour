@@ -4,6 +4,10 @@
   justify-content: space-between;
   align-items: center;
   row-gap: 16px;
+
+  @media (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
 }
 
 .nav__burger {
@@ -24,7 +28,13 @@
   }
 
   &:focus-visible {
-    outline: 1px solid currentColor;
+    outline: 1px solid #ffffff;
+    outline-offset: 3px;
+  }
+
+  &:active,
+  &:disabled {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet) {
@@ -92,7 +102,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 22px;
-  padding: 30px 15px 50px 15px;
+  padding: 30px 15px 50px;
   width: 100vw;
 
   background-color: $background-dark-color;
@@ -102,7 +112,7 @@
 
     row-gap: 26px;
 
-    padding: 50px 45px 70px 45px;
+    padding: 50px 45px 70px;
   }
 }
 
@@ -123,18 +133,17 @@
   }
 
   &:active {
-    color: #1C3374;
+    color: $link-effects-color-secondary;
     box-shadow: none;
   }
 
   &:not([href]) {
-    color: #999999;
+    color: $disabled-color;
   }
 }
 
 .nav__list--footer .nav__link:active {
-  color: #0266C1;
-
+  color: $link-effects-color-primary;
 }
 
 .nav__list--shown .nav__link {
@@ -151,11 +160,15 @@
 .nav__logo {
   @include link-reset;
 
+  flex-shrink: 0;
+  height: 42px;
+
   transition: opacity 0.3s ease-in-out;
 
   &:hover,
   &:focus-visible {
     opacity: 0.5;
+    outline: none;
   }
 
   &:active,
@@ -207,6 +220,7 @@
   }
 
   @media (min-width: $desktop) {
+    min-width: 145px;
     font-size: 18px;
     line-height: 18px;
   }
@@ -219,12 +233,12 @@
     }
 
     &:focus-visible {
-      color: #2D383F;
+      color: $text-main-color;
       outline: none;
     }
 
     &:active {
-      color: #1C3374;
+      color: $link-effects-color-secondary;
     }
 
     @media (min-width: $tablet) {
@@ -240,12 +254,12 @@
     }
 
     &:focus-visible {
-      color: #0266C1;
+      color: $link-effects-color-primary;
       outline: none;
     }
 
     &:active {
-      color: #1C3374;
+      color: $link-effects-color-secondary;
     }
 
     @media (min-width: $desktop) {

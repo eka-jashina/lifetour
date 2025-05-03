@@ -5,6 +5,8 @@ import 'swiper/css';
 function initHeroSwiper() {
   const heroSwiper = new Swiper('.hero__swiper', {
     modules: [Pagination],
+    mousewheel: false,
+    simulateTouch: false,
     slidesPerView: 1,
     loop: true,
     speed: 900,
@@ -28,7 +30,7 @@ function initHeroSwiper() {
         this.slides.forEach((slide, index) => {
           const isActive = index === this.activeIndex;
           slide.querySelectorAll('a, button, input, textarea, select, [tabindex]')
-            .forEach(el => {
+            .forEach((el) => {
               el.tabIndex = isActive ? 0 : -1;
             });
         });

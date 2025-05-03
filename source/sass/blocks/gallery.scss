@@ -45,30 +45,23 @@
 }
 
 .gallery p {
+  @include text-small-font;
+
   margin: 0;
   margin-bottom: 31px;
   padding-left: 15px;
   max-width: 290px;
 
-  font-size: 12px;
-  line-height: 18px;
-
   @media (min-width: $tablet) {
     max-width: 465px;
     padding-left: 45px;
     margin-bottom: 21px;
-
-    font-size: 14px;
-    line-height: 22px;
   }
 
   @media (min-width: $desktop) {
     max-width: 720px;
     padding-left: 120px;
     margin-bottom: 45px;
-
-    font-size: 16px;
-    line-height: 24px;
   }
 }
 

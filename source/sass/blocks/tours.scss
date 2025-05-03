@@ -1,3 +1,19 @@
+.tours {
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 100px;
+  }
+}
+
+.tours__container {
+  position: relative;
+}
+
 .tours__swiper {
   position: relative;
   box-sizing: border-box;
@@ -16,6 +32,12 @@
 
 .tours__list {
   @include list-reset;
+}
+
+.tours__navigation {
+  @media (min-width: $desktop) {
+    right: 120px;
+  }
 }
 
 .tours__more {

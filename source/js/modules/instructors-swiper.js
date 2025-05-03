@@ -6,8 +6,6 @@ function initInstructorsSwiper() {
   const instructorsSwiper = new Swiper('.instructors__swiper', {
     modules: [Navigation],
     speed: 1000,
-    mousewheel: false,
-    simulateTouch: false,
     autoHeight: true,
     slidesPerView: 1,
     initialSlide: window.innerWidth < 768 ? 2 : 0,

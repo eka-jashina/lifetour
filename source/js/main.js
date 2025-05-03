@@ -20,6 +20,3 @@ window.addEventListener('resize', debouncedResizeAdvantagesSwiper);
 
 initGallerySwiper();
 window.addEventListener('resize', debouncedResizeGallerySwiper);
-
-
-

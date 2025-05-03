@@ -5,20 +5,18 @@
   display: flex;
   width: 290px;
   min-height: 416px;
-
-  overflow: hidden;
 }
 
 .tour__img {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   z-index: -1;
 
+  width: 100%;
   height: 100%;
   object-fit: cover;
 
-  background-color: #0266C1;
+  background-color: $background-dark-color;
 }
 
 .tour__content {
@@ -32,7 +30,7 @@
   font-size: 12px;
   line-height: 12px;
   font-weight: 300;
-  color: #ffffff;
+  color: $text-light-color;
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%);
 }
@@ -80,7 +78,7 @@
 
   font-weight: 500;
 
-  background-color: #0266C1;
+  background-color: $icon-secondary-color;
 
   &::before {
     content: "";
@@ -128,13 +126,13 @@
 
 .tour__days {
   &::before {
-  background-image: url("/__spritemap#sprite-days-view");
+    background-image: url("/__spritemap#sprite-days-view");
   }
 }
 
 .tour__nights {
   &::before {
-  background-image: url("/__spritemap#sprite-nights-view");
+    background-image: url("/__spritemap#sprite-nights-view");
   }
 }
 
@@ -170,13 +168,13 @@
 }
 
 .tour__description--level-3 {
-background-image: url("/__spritemap#sprite-stars-3-view");
+  background-image: url("/__spritemap#sprite-stars-3-view");
 }
 
 .tour__description--level-4 {
-background-image: url("/__spritemap#sprite-stars-4-view");
+  background-image: url("/__spritemap#sprite-stars-4-view");
 }
 
 .tour__description--level-5 {
-background-image: url("/__spritemap#sprite-stars-5-view");
+  background-image: url("/__spritemap#sprite-stars-5-view");
 }

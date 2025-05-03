@@ -14,7 +14,7 @@ function initGallerySwiper() {
   if (window.innerWidth < breakpoint && !gallerySwiper) {
     galleryContainer.classList.add('swiper');
     galleryWrapper.classList.add('swiper-wrapper');
-    for (let slide of gallerySlides) {
+    for (const slide of gallerySlides) {
       slide.classList.add('swiper-slide');
     }
 
@@ -22,8 +22,6 @@ function initGallerySwiper() {
       modules: [Navigation],
       loop: true,
       speed: 1000,
-      mousewheel: false,
-      simulateTouch: false,
       autoHeight: true,
       slidesPerView: 2,
       slidesPerGroup: 1,

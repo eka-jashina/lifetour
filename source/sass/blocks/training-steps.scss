@@ -11,7 +11,7 @@
 }
 
 .training-steps__title {
-  @include h5-font;
+  @include subtitle-font;
 
   padding: 0;
   margin-bottom: 23px;
@@ -61,7 +61,7 @@
   width: 2px;
   height: 100%;
 
-  background-color: #0266C1;
+  background-color: $icon-secondary-color;
   background-clip: content-box;
 
   @media (min-width: $tablet) {
@@ -95,7 +95,6 @@
     padding-left: 45px;
 
     background-position: top 10px left 10px;
-
   }
 }
 
@@ -108,7 +107,7 @@
   width: 14px;
   height: 14px;
 
-  background-color: #0266C1;
+  background-color: $icon-secondary-color;
   border-radius: 50%;
 
   @media (min-width: $tablet) {

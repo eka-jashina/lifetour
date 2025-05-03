@@ -1,4 +1,5 @@
 .instructors {
+  position: relative;
   padding: 10px 0;
 
   @media (min-width: $tablet) {
@@ -33,8 +34,20 @@
 .instructors__list {
   @include list-reset;
 }
+
 .instructors__list .instructors__item {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.instructors__navigation {
+  @media (min-width: $tablet) {
+    top: 27px;
+    right: 0;
+  }
+
+  @media (min-width: $desktop) {
+    top: 58px;
+  }
 }

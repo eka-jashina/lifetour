@@ -6,8 +6,6 @@ function initReviewsSwiper() {
   const reviewsSwiper = new Swiper('.reviews__swiper', {
     modules: [Navigation],
     speed: 1000,
-    mousewheel: false,
-    simulateTouch: false,
     autoHeight: true,
     slidesPerView: 1,
 
@@ -25,7 +23,7 @@ function initReviewsSwiper() {
       1440: {
         slidesPerView: 1.72,
         slidesPerGroup: 1,
-        spaceBetween: 120,
+        spaceBetween: 111,
       },
     },
 

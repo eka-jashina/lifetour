@@ -6,8 +6,6 @@ function initToursSwiper() {
   const toursSwiper = new Swiper('.tours__swiper', {
     modules: [Navigation],
     speed: 1000,
-    mousewheel: false,
-    simulateTouch: false,
     autoHeight: true,
     slidesPerView: 1,
 

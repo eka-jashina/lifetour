@@ -24,21 +24,21 @@ img {
   min-width: 320px;
   margin: 0 auto;
 
-  font-family: "Montserrat";
-  color: #2D383F;
+  font-family: "Montserrat", "Trebuchet MS", "Verdana", sans-serif;
+  color: $text-main-color;
+}
 
-  &--no-scroll {
-    position: relative;
-    overflow: hidden;
+.body--no-scroll {
+  position: relative;
+  overflow: hidden;
 
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: 2;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
 
-      background-color: rgba(45, 56, 63, 0.6);
-    }
+    background-color: rgba(45, 56, 63, 0.6);
   }
 }
 
@@ -91,12 +91,13 @@ img {
 }
 
 .section__title {
-  @include h3-font;
+  @include section-title-font;
 
   margin: 0;
   padding-top: 19px;
   padding-bottom: 14px;
   margin-bottom: 25px;
+  width: 85%;
 
   @media (min-width: $tablet) {
     padding-top: 20px;
