@@ -83,14 +83,14 @@
 .gallery .gallery__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  row-gap: 5px;
 
   @media (min-width: $tablet) {
     row-gap: 6px;
   }
 
   @media (min-width: $desktop) {
-    row-gap: 0;
+    row-gap: 7px;
   }
 }
 

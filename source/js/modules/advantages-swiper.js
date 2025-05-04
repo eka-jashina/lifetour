@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import {Navigation} from 'swiper/modules';
-import 'swiper/css';
 import { destroySwiper, debounce } from './swiper-utils.js';
+import 'swiper/css';
 
 const advContainer = document.querySelector('.advantages__swiper');
 const advWrapper = document.querySelector('.advantages__list');

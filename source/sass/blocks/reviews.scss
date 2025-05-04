@@ -1,15 +1,15 @@
 .reviews {
   padding-top: 18px;
-  padding-bottom: 20px;
+  padding-bottom: 0;
 
   @media (min-width: $tablet) {
     padding-top: 40px;
-    padding-bottom: 39px;
+    padding-bottom: 19px;
   }
 
   @media (min-width: $desktop) {
     padding-top: 122px;
-    padding-bottom: 87px;
+    padding-bottom: 67px;
   }
 }
 
@@ -22,15 +22,7 @@
 }
 
 .reviews__title {
-  margin-bottom: 17px;
-
-  @media (min-width: $tablet) {
-    margin-bottom: 25px;
-  }
-
-  @media (min-width: $desktop) {
-    margin-bottom: 28px;
-  }
+  margin-bottom: 0;
 }
 
 .reviews__swiper {
@@ -41,6 +33,17 @@
 
 .reviews__list {
   @include list-reset;
+
+  padding-top: 17px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 28px;
+  }
 }
 
 .reviews__list .reviews__item {

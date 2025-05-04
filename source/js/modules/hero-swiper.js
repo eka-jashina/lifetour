@@ -1,6 +1,5 @@
 import Swiper from 'swiper';
 import {Pagination} from 'swiper/modules';
-import 'swiper/css';
 
 function initHeroSwiper() {
   const heroSwiper = new Swiper('.hero__swiper', {
