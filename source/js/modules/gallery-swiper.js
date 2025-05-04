@@ -35,6 +35,7 @@ function initGallerySwiper() {
       breakpoints: {
         768: {
           slidesPerView: 3,
+          spaceBetween: 4.5,
         },
       },
 

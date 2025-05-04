@@ -84,6 +84,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    row-gap: 6px;
+  }
+
+  @media (min-width: $desktop) {
+    row-gap: 0;
+  }
 }
 
 .gallery__navigation {
