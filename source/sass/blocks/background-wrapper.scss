@@ -22,10 +22,10 @@
         url("../../img/decor/clouds/clouds-1-tablet@2x.png") type("image/png") 2x
       ),
       image-set(
-        url("../../img/decor/clouds/clouds-2-tablet@1x.webp") type("image/webp") 1x,
-        url("../../img/decor/clouds/clouds-2-tablet@2x.webp") type("image/webp") 2x,
-        url("../../img/decor/clouds/clouds-2-tablet@1x.png") type("image/png") 1x,
-        url("../../img/decor/clouds/clouds-2-tablet@2x.png") type("image/png") 2x
+        url("@/img/decor/clouds/clouds-2-tablet@1x.webp") type("image/webp") 1x,
+        url("@/img/decor/clouds/clouds-2-tablet@2x.webp") type("image/webp") 2x,
+        url("@/img/decor/clouds/clouds-2-tablet@1x.png") type("image/png") 1x,
+        url("@/img/decor/clouds/clouds-2-tablet@2x.png") type("image/png") 2x
       );
   }
 
@@ -34,16 +34,16 @@
     background-size: 602px 1630px, 633px 280px;
     background-image:
       image-set(
-        url("../../img/decor/clouds/clouds-1-desktop@1x.webp") type("image/webp") 1x,
-        url("../../img/decor/clouds/clouds-1-desktop@2x.webp") type("image/webp") 2x,
-        url("../../img/decor/clouds/clouds-1-desktop@1x.png") type("image/png") 1x,
-        url("../../img/decor/clouds/clouds-1-desktop@2x.png") type("image/png") 2x
+        url("@/img/decor/clouds/clouds-1-desktop@1x.webp") type("image/webp") 1x,
+        url("@/img/decor/clouds/clouds-1-desktop@2x.webp") type("image/webp") 2x,
+        url("@/img/decor/clouds/clouds-1-desktop@1x.png") type("image/png") 1x,
+        url("@/img/decor/clouds/clouds-1-desktop@2x.png") type("image/png") 2x
       ),
       image-set(
-        url("../../img/decor/clouds/clouds-2-desktop@1x.webp") type("image/webp") 1x,
-        url("../../img/decor/clouds/clouds-2-desktop@2x.webp") type("image/webp") 2x,
-        url("../../img/decor/clouds/clouds-2-desktop@1x.png") type("image/png") 1x,
-        url("../../img/decor/clouds/clouds-2-desktop@2x.png") type("image/png") 2x
+        url("@/img/decor/clouds/clouds-2-desktop@1x.webp") type("image/webp") 1x,
+        url("@/img/decor/clouds/clouds-2-desktop@2x.webp") type("image/webp") 2x,
+        url("@/img/decor/clouds/clouds-2-desktop@1x.png") type("image/png") 1x,
+        url("@/img/decor/clouds/clouds-2-desktop@2x.png") type("image/png") 2x
       );
   }
 }
@@ -55,10 +55,10 @@
     background-size: 768px 996px;
     background-image:
       image-set(
-        url("../../img/decor/clouds/clouds-3-tablet@1x.webp") type("image/webp") 1x,
-        url("../../img/decor/clouds/clouds-3-tablet@2x.webp") type("image/webp") 2x,
-        url("../../img/decor/clouds/clouds-3-tablet@1x.png") type("image/png") 1x,
-        url("../../img/decor/clouds/clouds-3-tablet@2x.png") type("image/png") 2x
+        url("@/img/decor/clouds/clouds-3-tablet@1x.webp") type("image/webp") 1x,
+        url("@/img/decor/clouds/clouds-3-tablet@2x.webp") type("image/webp") 2x,
+        url("@/img/decor/clouds/clouds-3-tablet@1x.png") type("image/png") 1x,
+        url("@/img/decor/clouds/clouds-3-tablet@2x.png") type("image/png") 2x
       );
   }
 
@@ -68,10 +68,10 @@
     background-size: 1440px 447px;
     background-image:
       image-set(
-        url("../../img/decor/clouds/clouds-3-desktop@1x.webp") type("image/webp") 1x,
-        url("../../img/decor/clouds/clouds-3-desktop@2x.webp") type("image/webp") 2x,
-        url("../../img/decor/clouds/clouds-3-desktop@1x.png") type("image/png") 1x,
-        url("../../img/decor/clouds/clouds-3-desktop@2x.png") type("image/png") 2x
+        url("@/img/decor/clouds/clouds-3-desktop@1x.webp") type("image/webp") 1x,
+        url("@/img/decor/clouds/clouds-3-desktop@2x.webp") type("image/webp") 2x,
+        url("@/img/decor/clouds/clouds-3-desktop@1x.png") type("image/png") 1x,
+        url("@/img/decor/clouds/clouds-3-desktop@2x.png") type("image/png") 2x
       );
   }
 }
